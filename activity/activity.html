@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>中秋活动</title>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0 auto;
+            max-width: 750px;
+            background: url("images/bg.png") center no-repeat;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        ul,
+        li,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        dt,
+        dd {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .clearfloat:after {
+            display: block;
+            clear: both;
+            content: '';
+            visibility: hidden;
+            height: 0
+        }
+
+        .clearfloat {
+            zoom: 1
+        }
+
+        input,
+        button {
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        input:-webkit-autofill {
+            -webkit-text-fill-color: #fff !important;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none !important;
+            margin: 0;
+        }
+
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+
+        header {
+            width: 750px;
+            height: 606px;
+            background: url("images/banner.png") center no-repeat;
+        }
+
+        .title {
+            width: 406px;
+            height: 90px;
+            color: #fff;
+            font-size: 35px;
+            line-height: 100px;
+            text-align: center;
+            letter-spacing: 5px;
+            padding-left: 50px;
+            margin: 30px auto 70px auto;
+            background: url("images/title.png") center no-repeat;
+        }
+
+        .list {
+            width: 712px;
+            height: 100%;
+            margin: 0 auto;
+            padding: 10px 0;
+            border-radius: 10px;
+            background: #1d5a9f;
+        }
+
+        .content {
+            width: 690px;
+            height: 100%;
+            margin: 0 auto;
+            background-color: #153c6b;
+        }
+
+        .shop {
+            width: 660px;
+            margin: 0 auto
+        }
+
+        .shop>li {
+            float: left;
+            width: 314px;
+            height: 406px;
+            background: #fff;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .shop>li:nth-child(2n+1) {
+            margin-right: 30px;
+        }
+
+        .shop>li:not(:last-child) {
+            margin-bottom: 22px;
+        }
+
+        .shop img {
+            width: 314px;
+            height: 269px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .shop-footer {
+            text-align: center;
+        }
+
+        .shop-title {
+            font-size: 29px;
+            color: #050505;
+        }
+
+        .shop-price {
+            font-size: 23px;
+            color: #5A5A5A;
+            margin: 50px 0 0 0;
+        }
+
+        .shop-price span {
+            color: #FF3131;
+        }
+
+        i {
+            width: 24px;
+            height: 23px;
+            display: inline-block;
+            margin: 3px 2px 0 2px;
+            background: url("images/icon.png") center no-repeat;
+        }
+
+        footer {
+            width: 750px;
+            height: 455px;
+            margin: 0 auto;
+        }
+
+        h4 {
+            color: #fff;
+            font-size: 28px;
+            margin: 60px 0 30px 20px;
+        }
+
+        footer div {
+            width: 710px;
+            font-size: 22px;
+            color: #fff;
+            line-height: 40px;
+            text-align: justify;
+            text-indent: 2em;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="title">放送商品</div>
+        <div class="list">
+            <div class="content">
+                <ul class="shop clearfloat">
+                    <li>
+                        <img src="images/shop.png">
+                        <div class="shop-footer">
+                            <p class="shop-title">LED小夜灯</p>
+                            <p class="shop-price">福利价<span>￥50</span><span>+</span><i></i><span>80</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/shop.png">
+                        <div class="shop-footer">
+                            <p class="shop-title">LED小夜灯</p>
+                            <p class="shop-price">福利价<span>￥50</span><span>+</span><i></i><span>80</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/shop.png">
+                        <div class="shop-footer">
+                            <p class="shop-title">LED小夜灯</p>
+                            <p class="shop-price">福利价<span>￥50</span><span>+</span><i></i><span>80</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/shop.png">
+                        <div class="shop-footer">
+                            <p class="shop-title">LED小夜灯</p>
+                            <p class="shop-price">福利价<span>￥50</span><span>+</span><i></i><span>80</span></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4>活动规则：</h4>
+        <div>LED小台灯LED小台灯LED小台灯LED小台灯LED小台灯LED小台灯LED小台灯LED小台灯LED小台灯LED小台灯LED小台灯</div>
+    </footer>
+</body>
+
+</html>
+<script>
+    var phoneScale = parseInt(window.screen.width) / 750;
+    document.write('<meta name="viewport" content="width=750, minimum-scale = ' + phoneScale + ', maximum-scale = ' +
+        phoneScale + ', target-densitydpi=device-dpi">');
+</script>
