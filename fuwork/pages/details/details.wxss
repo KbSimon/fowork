@@ -1,0 +1,74 @@
+/* pages/details/details.wxss */
+page{
+  height: 100%;
+}
+
+.content{
+  height: 100%;
+}
+
+.banner{
+  width: 100%;
+  height: 688rpx;
+  border-bottom: 1px solid #ededed;
+}
+
+.banner>image{
+  width: 100%;
+  height: 688rpx;
+}
+
+.introduce{
+  height: 145rpx;
+  background: #fff;
+  margin: 0 0 25rpx 0;
+  padding: 40rpx 30rpx 0 50rpx;
+}
+
+.ico {
+  width: 24rpx;
+  height: 22rpx;
+  margin: 0 5rpx;
+}
+
+.old::before{
+  content: "￥";
+}
+
+.old::after{
+  content: "+";
+}
+
+.old,
+.new{
+  color: #FF3131;
+  font-size: 30rpx;
+  line-height: 30rpx;
+}
+
+.rules{
+  background: #fff;
+  padding: 0 45rpx;
+  color:#5A5A5A;
+}
+
+.title{
+  font-size: 30rpx;
+  padding-top: 45rpx;
+}
+
+.rules>text{
+  display: block;
+  font-size: 25rpx;
+  margin: 65rpx 0;
+ 
+}
+
+.buy{
+  height: 100rpx;
+  color: #FF3131;
+  font-size: 37rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-top: 1px solid #e8e8e8;
+}

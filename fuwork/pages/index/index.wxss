@@ -1,0 +1,195 @@
+/**index.wxss**/
+
+.content{
+  height: 100%;
+}
+
+.banner {
+  height: 420rpx;
+}
+
+.swiper {
+  width: 100%;
+  height: 420rpx;
+}
+
+.service {
+  width: 100%;
+  height: 235rpx;
+  display: flex;
+  background: #fff;
+}
+
+.service>navigator {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.firm image, .space image, .sign-in image {
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.firm text, .space text, .sign-in text {
+  color: #050505;
+  font-size: 28rpx;
+  padding: 10rpx 0 0 0;
+}
+
+/* 爆款商品 */
+
+.news, .shop {
+  background: #fff;
+  margin: 30rpx 0;
+}
+
+.news-head, .shop-head {
+  width: 100%;
+  height: 115rpx;
+  line-height: 115rpx;
+  border-bottom: 1px solid #ededed;
+}
+
+.news-title, .shop-title {
+  float: left;
+  color: #050505;
+  font-size: 35rpx;
+  padding: 0 0 0 30rpx;
+}
+
+.news-more, .shop-more {
+  float: right;
+  color: #5a5a5a;
+  font-size: 27rpx;
+  padding: 0 20rpx 0 0;
+}
+
+.news-more>image, .shop-more>image {
+  width: 14rpx;
+  height: 24rpx;
+  margin: 0 0 0 12rpx;
+}
+
+.news-left,
+.shop-left{
+  width: 230rpx;
+  float: left;
+  margin: 0 0 0 30rpx;
+}
+
+/* 价格 */
+.rate{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100rpx 0 0 0;
+}
+
+.only,
+.price{
+  color: #5A5A5A;
+  font-size: 24rpx;
+}
+
+.ico {
+  width: 24rpx;
+  height: 22rpx;
+  margin: 0 5rpx;
+}
+
+.old::before{
+  content: "￥";
+}
+
+.old::after{
+  content: "+";
+}
+
+.old,
+.new{
+  color: #FF3131;
+  font-size: 30rpx;
+  line-height: 30rpx;
+}
+
+.only::before{
+  content: "仅剩";
+}
+
+.only::after{
+  content: "件";
+}
+
+
+/* 商品详情 */
+.news{
+  margin: 0 0 250rpx 0;
+}
+
+.news-content>navigator, .shop-content>navigator {
+  width: 100%;
+  height: 210rpx;
+  margin: 40rpx 0 0 0;
+}
+
+.news-content>navigator:not(:last-of-type), .shop-content>navigator:not(:last-of-type) {
+  border-bottom: 1px solid #ededed;
+}
+
+.news-right, .shop-right {
+  width: 420rpx;
+  float: right;
+  font-size: 30rpx;
+  padding: 0 30rpx;
+}
+
+.news-img, .shop-img {
+  width: 230rpx;
+  height: 168rpx;
+}
+
+.shop-right>text {
+  display: block;
+}
+
+.shop-right>text:nth-child(2) {
+  color: #ff3131;
+  padding: 96rpx 0 0 0;
+}
+
+/* 富创资讯 */
+.news-right>text:nth-child(1) {
+  color: #050505;
+  font-size: 29rpx;
+  margin: 0 46rpx 0 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.news-bottom {
+  display: flex;
+  margin: 54rpx 0 0 0;
+}
+
+.tag {
+  width: 70rpx;
+  height: 35rpx;
+  color: #ff3131;
+  font-size: 26rpx;
+  line-height: 35rpx;
+  text-align: center;
+  margin: 0 20rpx 0 0;
+  border: 1rpx solid rgba(255, 49, 49, 1);
+  border-radius: 4rpx;
+}
+
+.news-bottom>text {
+  font-size: 27rpx;
+  color: #9a9a9a;
+  padding: 10rpx 0 0 0;
+}

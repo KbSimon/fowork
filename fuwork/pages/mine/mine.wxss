@@ -1,0 +1,143 @@
+/* pages/mine/mine.wxss */
+.header{
+  height: 375rpx;
+}
+
+.head{
+  width: 100%;
+  height: 375rpx;
+}
+
+.banner {
+  top: 0;
+  width: 100%;
+  position: absolute;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90rpx 0 65rpx 0;
+}
+
+.via{
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.message{
+  font-size: 27rpx;
+  display: flex;
+  margin: 20rpx 0 20rpx 0;
+}
+
+.message>image{
+  width: 140rpx;
+  height: 34rpx;
+  background: #fff;
+  margin: 0 0 0 20rpx;
+}
+
+.name{
+  font-size: 30rpx;
+}
+
+/* 余额 */
+.money{
+  height: 125rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 55rpx 0 75rpx;
+}
+
+.balance>text{
+  display: block;
+}
+
+.difference{
+  font-size: 25rpx;
+  color: #5A5A5A;
+}
+
+.sum{
+  font-size: 33rpx;
+  color: #050505;
+}
+
+.pay{
+  display: flex;
+  color: #121212;
+  font-size: 29rpx;
+  line-height: 80rpx;
+}
+
+/* 订单 */
+.bill{
+  height: 195rpx;
+  background: #fff;
+  margin: 25px 0;
+  background: #fff;
+  display: flex;
+}
+
+.bill>navigator{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bill>navigator>image{
+  max-width: 60rpx;
+  max-height: 60rpx;
+  vertical-align: middle;
+}
+
+.bill>navigator>text{
+  color:#5A5A5A;
+  font-size: 27rpx;
+  padding: 30rpx 0 0 0;
+}
+
+/* 功能 */
+.action{
+  height: 725rpx;
+  background: #fff;
+}
+
+.set>navigator,
+.action>navigator{
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 40rpx;
+}
+
+.set>navigator:not(:last-of-type),
+.action>navigator:not(:last-of-type){
+  border-bottom: 1px solid #ededed;
+}
+
+.set>navigator>image,
+.action>navigator>image{
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.set>navigator>text,
+.action>navigator>text{
+  color: #202020;
+  font-size: 29rpx;
+  margin: 0 0 0 30rpx;
+}
+
+/* 设置 */
+.set{
+  height: 245rpx;
+  background: #fff;
+  margin: 25rpx 0 180rpx 0;
+}
+

@@ -1,0 +1,58 @@
+<!--pages/serve/serve.wxml-->
+<view class="main">
+  <view class="banner">
+    <image src="images/banner.png"></image>
+  </view>
+  <view class="serve">
+    <view>
+      <view class="serve-left">
+        <text>在线维修</text>
+        <text>富创保洁，伴您同行</text>
+        <text>￥680起</text>
+      </view>
+      <view class="serve-right">
+        <image src="images/serve.png" mode="scaleToFill"></image>
+      </view>
+    </view>
+    <view>
+      <view class="serve-left">
+        <text>保洁</text>
+        <text>富创保洁，伴您同行</text>
+        <text>￥680起</text>
+      </view>
+      <view class="serve-right">
+        <image src="images/serve.png" mode="scaleToFill"></image>
+      </view>
+    </view>
+    <view>
+      <view class="serve-left">
+        <text>搬家</text>
+        <text>富创保洁，伴您同行</text>
+        <text>￥680起</text>
+      </view>
+      <view class="serve-right">
+        <image src="images/serve.png" mode="scaleToFill"></image>
+      </view>
+    </view>
+    <view>
+      <view class="serve-left">
+        <text>绿植</text>
+        <text>富创保洁，伴您同行</text>
+        <text>￥680起</text>
+      </view>
+      <view class="serve-right">
+        <image src="images/serve.png" mode="scaleToFill"></image>
+      </view>
+    </view>
+    <view>
+      <view class="serve-left">
+        <text>绿植</text>
+        <text>富创保洁，伴您同行</text>
+        <text>￥680起</text>
+      </view>
+      <view class="serve-right">
+        <image src="images/tally.png" mode="scaleToFill"></image>
+      </view>
+    </view>
+  </view>
+</view>

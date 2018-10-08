@@ -1,0 +1,42 @@
+<!--pages/hot/hot.wxml-->
+<view class="main">
+  <view class="details">
+    <navigator url="../details/details" class="shop" hover-class="none">
+      <image src="images/shop.png"></image>
+      <text>LED小夜灯</text>
+      <view class="price">福利价:
+        <text class="old">5</text>
+        <image src="images/icon.png" class="ico"></image>
+        <text class="new">80</text>
+      </view>
+    </navigator >
+    <navigator url="../details/details" class="shop" hover-class="none">
+      <image src="images/shop.png"></image>
+      <text>LED小夜灯</text>
+      <view class="price">福利价:
+        <text class="old">5</text>
+        <image src="images/icon.png" class="ico"></image>
+        <text class="new">80</text>
+      </view>
+    </navigator >
+    <navigator url="../details/details" class="shop" hover-class="none">
+      <image src="images/shop.png"></image>
+      <text>LED小夜灯</text>
+      <view class="price">福利价:
+        <text class="old">5</text>
+        <image src="images/icon.png" class="ico"></image>
+        <text class="new">80</text>
+      </view>
+    </navigator>
+    <navigator url="../details/details" class="shop" hover-class="none">
+      <image src="images/shop.png"></image>
+      <text>LED小夜灯</text>
+      <view class="price">福利价:
+        <text class="old">5</text>
+        <image src="images/icon.png" class="ico"></image>
+        <text class="new">80</text>
+      </view>
+    </navigator>
+ </view>
+
+</view>

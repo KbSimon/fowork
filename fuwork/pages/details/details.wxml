@@ -1,0 +1,23 @@
+<!--pages/details/details.wxml-->
+<view class="content">
+  <view class="banner">
+    <image src="images/details.png"></image>
+  </view>
+  <view class="introduce">
+    <view>中国移动10元话费券</view>
+    <text class="old">5</text>
+    <image src="images/icon.png" class="ico"></image>
+    <text class="new">80</text>
+  </view>
+  <view class="rules">
+    <view class="title">活动规则</view>
+    <text>购买过程中，支付金额后我们会自动扣除相应的积分。
+
+购买商品成功后，我们会在2个工作日内发货，法定节假日顺延,请在确认商品完好后再签收。
+
+若存在质量问题，请在7个工作日内联系客服。
+
+客服电话：400-090-0061</text>
+  </view>
+  <navigator hover-class="none" url="" class="buy">立即购买</navigator>
+</view>

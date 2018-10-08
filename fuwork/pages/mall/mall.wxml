@@ -1,0 +1,73 @@
+<!--pages/mall/mall.wxml-->
+<view class="content">
+  <view class="banner">
+    <image src="images/banner.png"></image>
+  </view>
+  <view class="head">
+    <navigator hover-class="none" class="hot" url="../hot/hot">
+      <image src="images/hot.png"></image>
+      <text>爆款推荐</text>
+    </navigator>
+    <navigator hover-class="none" class="share" url="../share/share">
+      <image src="images/share.png"></image>
+      <text>会员拼单</text>
+    </navigator>
+    <navigator hover-class="none" class="record" url="../record/record">
+      <image src="images/record.png"></image>
+      <text>兑换记录</text>
+    </navigator>
+  </view>
+  <view class="integral">
+    <text>50</text>
+  </view>
+  <view class="shop">
+    <view class="goods clearfloat">
+      <view class="goods-left">
+        <image src="images/shop.png"></image>
+      </view>
+      <view class="goods-right">
+        <view class="title">LED小夜灯LED小夜灯LED小夜灯LED小夜灯LED小夜灯LED小夜灯</view>
+        <view class="rate">
+          <view class="price">
+            福利价
+            <text class="old">5</text>
+            <image src="images/icon.png" class="ico"></image>
+            <text class="new">80</text>
+          </view>
+          <view class="only">5</view>
+        </view>
+      </view>
+    </view>
+    <view class="goods">
+      <view class="goods-left">
+        <image src="images/shop.png"></image>
+      </view>
+      <view class="goods-right">
+        <view class="title">LED小夜灯LED小夜灯LED小夜灯LED小夜灯LED小夜灯LED小夜灯</view>
+        <view class="rate">
+          <view class="price">
+            福利价
+            <text class="old">5</text>
+            <image src="images/icon.png" class="ico"></image>
+            <text class="new">80</text>
+          </view>
+          <view class="only">5</view>
+        </view>
+      </view>
+    </view>
+  </view>
+   <view class="bottom">
+    <navigator hover-class="none">
+      <image src="images/store.png"></image>
+      <text>富创空间</text>
+    </navigator>
+    <navigator url="../store/store" hover-class="none">
+      <image src="images/store-active.png"></image>
+      <text>企业商城</text>
+    </navigator>
+    <navigator url="../mine/mine" hover-class="none">
+      <image src="images/store.png"></image>
+      <text>账户</text>
+    </navigator>
+    </view>
+</view>

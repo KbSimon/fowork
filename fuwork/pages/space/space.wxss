@@ -1,0 +1,47 @@
+/* pages/space/space.wxss */
+
+.content {
+  margin: 40rpx 30rpx;
+  background: #fff;
+}
+
+.store {
+  width: 690rpx;
+  height: 630rpx;
+  border-radius: 36rpx;
+  margin: 40px 0 0 0;
+  background: #f8f8f8;
+}
+
+.store>image{
+  width: 100%;
+  height: 380rpx;
+}
+
+.store>text{
+  display: block;
+  margin: 0 0 0 35rpx;
+}
+
+.name{
+  font-size: 33rpx;
+  color:  #050505;
+  padding: 40rpx 0 0 0;
+}
+
+.area{
+  font-size: 25rpx;
+  color: #9A9A9A;
+  padding: 24rpx 0 35rpx 0;
+}
+
+.price{
+  color:#FF2031;
+  font-size: 35rpx;
+}
+
+.price::after{
+  content: "元";
+  font-size: 20rpx;
+  padding: 0 0 0 6rpx;
+}

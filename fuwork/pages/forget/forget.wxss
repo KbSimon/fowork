@@ -1,0 +1,70 @@
+/* pages/forget/forget.wxss */
+
+page {
+  height: 100%;
+}
+
+.content {
+  height: 100%;
+}
+
+.form {
+  height: 890rpx;
+  background: #fff;
+}
+
+.pwd, .code, .name, .img-code, .pwd-again {
+  width: 690rpx;
+  height: 80rpx;
+  margin: 0 auto;
+  padding: 40rpx 0 0 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.name-input, .code-input, .pwd-input, .img-input, .again-input {
+  float: left;
+  width: 280rpx;
+  height: 70rpx;
+  font-size: 32rpx;
+  padding: 0 0 0 40rpx;
+}
+
+.form>view>view {
+  float: left;
+  width: 170rpx;
+  display: block;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align-last: justify;
+  font-size: 32rpx;
+}
+
+.send {
+  float: left;
+  display: block;
+  width: 200rpx;
+  height: 66rpx;
+  color: #fff;
+  font-size: 24rpx;
+  line-height: 66rpx;
+  background: rgba(255, 49, 49, 1);
+  border-radius: 33px;
+}
+
+.see {
+  width: 198rpx;
+  height: 66rpx;
+  background: rgba(255, 176, 176, 1);
+  border-radius: 33rpx;
+}
+
+.save {
+  width: 590rpx;
+  height: 84rpx;
+  color: #fff;
+  font-size: 40rpx;
+  line-height: 84rpx;
+  background: rgba(255, 49, 49, 1);
+  border-radius: 42rpx;
+  margin: 95rpx auto 0 auto;
+}

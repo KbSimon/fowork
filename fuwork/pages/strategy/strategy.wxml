@@ -1,0 +1,38 @@
+<!--pages/strategy/strategy.wxml-->
+<view class="main">
+  <view class="bg">
+    <image src="images/bg.png" class="background"></image>
+    <view class="strategy">
+      <view class="one">
+        <view class="title">剁手党</view>
+        <view class="text">作为一名富创剁手党，很多人在诱惑的商品和富创会员充值面前进退两难，这样吧，就让小富带你深度了解下富创会员系统。</view>
+      </view>
+      <view class="two">
+        <view class="title">1积分=10元话费</view>
+        <view class="text">小富兑换并且充值了富创会员：花费19元一个月 成为会员后当日签到就可获得1个积分，1个积分即可马上兑换商城中的10元话费，那么小富立刻赚回10元。
+        </view>
+      </view>
+      <view class="three">
+        <view class="title">签到领积分</view>
+        <view class="text">但小富还是亏9元呀，别急，嘿嘿！因为我们还有29天可以签到呀，会员还有积分加倍呢 那么小富当月还可得：2*29=58积分（邀请好友下载注册购买会员可得更多积分）
+        </view>
+      </view>
+      <view class="four">
+        <view class="title">真的省钱</view>
+        <view class="text">58积分可兑换：</view>
+        <view class="text">优酷会员价值：20元（20积分</view>
+        <view class="text">星巴克现金券价值：20元（20积分）</view>
+        <view class="text">一点点奶茶现金券价值：18元 </view>
+         <view class="text">总价值：58元 加上之前兑换的10元话费，小富总共获得了68元商品。
+         小富月度总支出：19元会员费 也就是说小富不仅得到了价廉物美的商品，还赚了49元 如果小富找好友拼单购买会员只需支付16元 如果小富邀请三个好友购买会员，那么会员费可以退还，小富总支出变为：0元
+        </view>
+      </view>
+      <view class="five">
+        <view class="title">就有这等美事</view>
+        <view class="text">我的天呐，天底下哪有这样的好事？小富不禁要问，平台不是要亏钱吗？ 富创空间是O2O商业社交的新联合办公平台，我们为企业和个人搭建一个打破线上线下的资源共享互利的平台，汇聚用户的同时会和一些品牌店（例如星巴克、猫眼电影、海底捞、喜茶）进行深度洽谈与合作，我们将会利用自身广阔的资源全力帮助富创会员去谋福利，当然啦，这些都要小富们的鼎力支持，你们越分享，富创的福利就会越大！ 大恩不言谢，小富们要记得每天按时签到哦，小小的积分、大大的快乐！
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,56 @@
+/* pages/strategy/strategy.wxss */
+
+.main {
+  height: 100%;
+  background: #fc5e70;
+}
+
+.bg {
+  width: 650rpx;
+  height: 2130rpx;
+  margin: 0 auto;
+  position: relative;
+  padding: 50rpx 0 190rpx 0;
+}
+
+.background {
+  width: 650rpx;
+  height: 2130rpx;
+  
+}
+
+.strategy{
+  top: 46rpx;
+  position: absolute;
+  line-height: 38rpx;
+}
+
+.one {
+  width: 645rpx;
+  height: 265rpx;
+  padding: 290rpx 0 0 0;
+}
+
+.title {
+  font-size: 32rpx;
+  margin: 22rpx 0 20rpx 200rpx;
+}
+
+.text {
+  color: #fff;
+  font-size: 26rpx;
+  margin: 0 30rpx;
+  text-align: justify;
+}
+
+.two {
+  height: 246 xrpx;
+}
+
+.three {
+  height: 255rpx;
+}
+
+.four {
+  height: 510rpx;
+}

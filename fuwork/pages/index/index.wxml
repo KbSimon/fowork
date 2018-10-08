@@ -1,0 +1,126 @@
+<!--index.wxml-->
+<view class="content">
+  <!-- banner -->
+  <view class="banner">
+    <image src="images/swiper.png" class="swiper" mode="scaleToFill"></image>
+  </view>
+  <!-- 业务 -->
+  <view class="service">
+  <navigator url="../space/space" class="space" hover-class="none">
+      <image src="images/work.png"></image>
+      <text>办公租赁</text>
+    </navigator>
+    <navigator url="../serve/serve" class="space" hover-class="none">
+      <image src="images/online.png"></image>
+      <text>在线服务</text>
+    </navigator>
+    <navigator url="../store/store" class="firm" hover-class="none">
+      <image src="images/semt.png"></image>
+      <text>企业社区</text>
+    </navigator>
+    <navigator url="../check/check" class="sign-in" hover-class="none">
+      <image src="images/sign.png"></image>
+      <text>签到有礼</text>
+    </navigator>
+  </view>
+  <!-- 爆款商品 -->
+  <view class="shop">
+    <view class="shop-head clearfloat">
+      <view class="shop-title">
+        <text>爆款商品</text>
+      </view>
+      <navigator url="../hot/hot" class="shop-more" hover-class="none">
+        <text>更多爆款</text>
+        <image src="images/more.png"></image>
+      </navigator>
+    </view>
+    <view class="shop-content"> 
+      <navigator class="clearfloat" url="../details/details" hover-class="none">
+        <view class="shop-left">
+          <image class="shop-img" src="images/shop.png"></image>
+        </view>
+        <view class="shop-right">
+          <text>LED小夜灯</text>
+          <view class="rate">
+          <view class="price">
+            福利价
+            <text class="old">5</text>
+            <image src="images/icon.png" class="ico"></image>
+            <text class="new">80</text>
+          </view>
+          <view class="only">5</view>
+        </view>
+        </view>
+      </navigator>
+      <navigator class="clearfloat" url="../details/details" hover-class="none">
+        <view class="shop-left">
+          <image class="shop-img" src="images/shop.png"></image>
+        </view>
+        <view class="shop-right">
+          <text>LED小夜灯</text>
+          <view class="rate">
+          <view class="price">
+            福利价
+            <text class="old">5</text>
+            <image src="images/icon.png" class="ico"></image>
+            <text class="new">80</text>
+          </view>
+          <view class="only">5</view>
+        </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <!-- 富创资讯 -->
+  <view class="news">
+    <view class="news-head clearfloat">
+      <view class="news-title">
+        <text>富创资讯</text>
+      </view>
+      <navigator have-class="none" class="news-more" url="../message/message">
+        <text>更多资讯</text>
+        <image src="images/more.png"></image>
+      </navigator> 
+    </view>
+    <view class="news-content">
+      <navigator class="clearfloat" url="" hover-class="none">
+        <view class="news-left">
+          <image class="news-img" src="images/shop.png"></image>
+        </view>
+        <view class="news-right">
+          <text>富创资讯富创资讯富创资讯富创资讯富创资讯富创资讯富创资讯富创资讯富创资讯富创资讯</text>
+          <view class="news-bottom">
+            <view class="tag">新闻</view>
+            <text>07-28 18:20</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator class="clearfloat" url="" hover-class="none">
+        <view class="news-left">
+          <image class="news-img" src="images/shop.png"></image>
+        </view>
+        <view class="news-right">
+          <text>富创资讯富创资讯富创资讯富创资讯富创资讯富创资讯富创资讯富创资讯富创资讯富创资讯</text>
+          <view class="news-bottom">
+            <view class="tag">活动</view>
+            <text>07-28 18:20</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="bottom">
+    <navigator hover-class="none">
+      <image src="images/store-active.png"></image>
+      <text>富创空间</text>
+    </navigator>
+    <navigator url="../mall/mall" hover-class="none">
+      <image src="images/store.png"></image>
+      <text>企业商城</text>
+    </navigator>
+    <navigator url="../mine/mine" hover-class="none">
+      <image src="images/store.png"></image>
+      <text>账户</text>
+    </navigator>
+  </view>
+</view>

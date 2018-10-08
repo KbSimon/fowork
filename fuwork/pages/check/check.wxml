@@ -1,0 +1,80 @@
+<!--pages/check/check.wxml-->
+<view class="main">
+  <view class="header">
+    <image src="images/banner.png" class="head"></image>
+    <view class="message">
+      <view class="msg-left">
+        <image></image>
+      </view>
+      <view class="msg-right">
+        <view class="days">连续签到
+          <text>1</text>天</view>
+        <view class="total">我的积分:
+          <text>3000</text>
+          <navigator>明细>></navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="rules">
+    <view class="num">今日已签到，明天签到可获得
+      <text>5</text>
+    </view>
+    <navigator url="../rules/rules" class="rules-text" hover-class="none">
+      <image src="images/rules.png" class="rules-ico"></image>
+      <text>签到规则</text>
+    </navigator>
+  </view>
+  <view class="details">
+    <view class="check-top clearfloat">
+      <view>
+        <text class="first">1</text>
+        <image src="images/on_01.png"></image>
+        <text class="active">+5</text>
+      </view>
+      <view>
+        <text>第二天</text>
+        <image src="images/off_01.png"></image>
+        <text class="active">+5</text>
+      </view>
+      <view>
+        <text>第三天</text>
+        <image src="images/off_02.png"></image>
+        <text class="active">+10</text>
+      </view>
+      <view>
+        <text>第四天</text>
+        <image src="images/off_01.png"></image>
+        <text class="active">+5</text>
+      </view>
+    </view>
+    <view class="check-bottom">
+      <view>
+        <text>第五天</text>
+        <image src="images/off_03.png"></image>
+        <text>+15</text>
+      </view>
+      <view>
+        <text>第六天</text>
+        <image src="images/off_01.png"></image>
+        <text>+5</text>
+      </view>
+      <view>
+        <text>第七天</text>
+        <image src="images/off_04.png"></image>
+        <text>+15</text>
+      </view>
+    </view>
+  </view>
+  <view class="bar">
+    <navigator hover-class="none">
+      <image class="how" src="images/question.png"></image>
+      <text>如何赚取积分</text>
+    </navigator>
+    <navigator hover-class="none">
+      <view></view>
+      <image class="shop" src="images/gift.png"></image>
+      <text>积分商城</text>
+    </navigator>
+  </view>
+</view>

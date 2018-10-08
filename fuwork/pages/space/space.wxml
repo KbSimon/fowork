@@ -1,0 +1,15 @@
+<!--pages/space/space.wxml-->
+<view class="content">
+  <view class="store">
+    <image src="images/shop.png"></image>
+    <text class="name">联强大厦·余杭·商业写字楼</text>
+    <text class="area">面积：600㎡ 地址：杭州-江干</text>
+    <text class="price">1600</text>
+  </view>
+  <view class="store">
+    <image src="images/shop.png"></image>
+    <text class="name">联强大厦·余杭·商业写字楼</text>
+    <text class="area">面积：600㎡ 地址：杭州-江干</text>
+    <text class="price">1600</text>
+  </view>
+</view>

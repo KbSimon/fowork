@@ -1,0 +1,40 @@
+<!--pages/message/message.wxml-->
+<view class="content">
+  <view style='height:10rpx;'></view>
+  <navigator hover-class="none" url="">
+    <view class="left">
+      <image src="../index/images/shop.png"></image>
+    </view>
+    <view class="right">
+      <view class="title">富创空间富创空间富创空间富创空间富创空间</view>
+      <view class="rate">
+        <view class="tags">新闻</view>
+        <text class="time">2018-08-10</text>
+      </view>
+    </view>
+  </navigator>
+  <navigator hover-class="none" url="">
+    <view class="left">
+      <image src="../index/images/shop.png"></image>
+    </view>
+    <view class="right">
+      <view class="title">富创空间富创空间富创空间富创空间富创空间</view>
+      <view class="rate">
+        <view class="tags">新闻</view>
+        <text class="time">2018-08-10</text>
+      </view>
+    </view>
+  </navigator>
+  <navigator hover-class="none" url="">
+    <view class="left">
+      <image src="../index/images/shop.png"></image>
+    </view>
+    <view class="right">
+      <view class="title">富创空间富创空间富创空间富创空间富创空间</view>
+      <view class="rate">
+        <view class="tags">新闻</view>
+        <text class="time">2018-08-10</text>
+      </view>
+    </view>
+  </navigator>
+</view>

@@ -1,0 +1,40 @@
+<!--pages/store/store.wxml-->
+<view class="content">
+  <view class="banner">
+    <image src="images/banner.png" mode="scaleToFill"></image>
+  </view>
+  <view class="store">
+    <view class="store-top">
+      <image class="logo"></image>
+      <text class="company">峰尚达资本投资管理(深圳）有限公司</text>
+    </view>
+    <view class="store-middle">
+      <image src="images/store.png" mode="aspectFill"></image>
+    </view>
+    <view class="store-bottom">
+      <view class="tag">
+        <text>互联网</text>
+      </view>
+      <view class="skim">
+      20
+      </view>
+    </view>
+  </view>
+  <view class="store">
+    <view class="store-top">
+      <image class="logo"></image>
+      <text class="company">峰尚达资本投资管理(深圳）有限公司</text>
+    </view>
+    <view class="store-middle">
+      <image src="images/store.png" mode="aspectFill"></image>
+    </view>
+    <view class="store-bottom">
+      <view class="tag">
+        <text>互联网</text>
+      </view>
+      <view class="skim">
+      20
+      </view>
+    </view>
+  </view>
+</view>

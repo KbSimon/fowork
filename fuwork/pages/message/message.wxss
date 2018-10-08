@@ -1,0 +1,63 @@
+/* pages/message/message.wxss */
+page{
+  height: 100%;
+}
+
+.content{
+  height: 100%;
+}
+
+navigator{
+  height: 160rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+  padding: 40rpx;
+  overflow: hidden;
+}
+
+.left{
+  float: left;
+  width: 230rpx;
+  height: 160rpx;
+}
+
+.left>image{
+  width: 230rpx;
+  height: 160rpx;
+}
+
+.right{
+
+  width: 420rpx;
+  height: 160rpx;
+  float: right;
+}
+
+.title{
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 80rpx;
+}
+
+.rate{
+  display: flex;
+}
+
+.tags{
+  width: 70rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  text-align: center;
+  color:#FF3131;
+  font-size: 24rpx;
+  border-radius: 4rpx;
+  border: 1px solid #FF3131;
+}
+
+.time{
+  color: #9A9A9A;
+  font-size: 27rpx;
+  margin: 10rpx 0 0 20rpx;
+}
