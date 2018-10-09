@@ -1,0 +1,139 @@
+<!--pages/policy/policy.wxml-->
+<view class="main">
+  <view style="height:40rpx;"></view>
+  <view class="banner">
+    <image src="../serve/images/policy.png"></image>
+  </view>
+  <view class="state">
+    <text>富创服务</text>
+    <view>致力于为中小企业提供专业高效的一体化财税服务，主营业务包含为中小企业提供包括代理记账、公司注册、工商变更、税务审计、税务代办、社保托管、财税咨询等企业服务。</view>
+  </view>
+  <view class="quote">
+    <text>报价单</text>
+    <view class="table">
+      <view class="tr">
+        <view>区域</view>
+        <view>类别</view>
+        <view>费用</view>
+        <view>完成时间</view>
+        <view>公章、财务专用章、法人章</view>
+      </view>
+      <view class="tr">
+        <view>建德</view>
+        <view>
+          <view>注册公司</view>
+          <view>地址费用</view>
+          <view>代理记账费</view>
+          <view style="color:#F14502;">合计</view>
+        </view>
+        <view>
+          <view>免费</view>
+          <view>2000左右</view>
+          <view>2600左右</view>
+          <view style="color:#F14502;">4600左右</view>
+        </view>
+        <view>2周左右</view>
+        <view>包括</view>
+      </view>
+      <view class="tr">
+        <view>淳安</view>
+        <view>
+          <view>注册公司</view>
+          <view>地址费用</view>
+          <view>代理记账费</view>
+          <view style="color:#F14502;">合计</view>
+        </view>
+        <view>
+          <view>免费</view>
+          <view>1100左右</view>
+          <view>23000左右</view>
+          <view style="color:#F14502;">3300左右</view>
+        </view>
+        <view>2周左右</view>
+        <view>包括</view>
+      </view>
+      <view class="tr">
+        <view>滨江</view>
+        <view>
+          <view>注册公司</view>
+          <view>地址费用</view>
+          <view>代理记账费</view>
+          <view style="color:#F14502;">合计</view>
+        </view>
+        <view>
+          <view>1000左右</view>
+          <view>5000左右</view>
+          <view>2600左右</view>
+          <view style="color:#F14502;">8600左右</view>
+        </view>
+        <view>2周左右</view>
+        <view>包括</view>
+      </view>
+      <view class="tr">
+        <view>江干</view>
+        <view>
+          <view>注册公司</view>
+          <view>地址费用</view>
+          <view>代理记账费</view>
+          <view style="color:#F14502;">合计</view>
+        </view>
+        <view>
+          <view>免费</view>
+          <view>6000左右</view>
+          <view>3600左右</view>
+          <view style="color:#F14502;">9600左右</view>
+        </view>
+        <view>1周左右</view>
+        <view>包括</view>
+      </view>
+      <view class="tr">
+        <view>萧山</view>
+        <view>
+          <view>注册公司</view>
+          <view>地址费用</view>
+          <view>代理记账费</view>
+          <view style="color:#F14502;">合计</view>
+        </view>
+        <view>
+          <view>免费</view>
+          <view>4000左右</view>
+          <view>3600左右</view>
+          <view style="color:#F14502;">7600左右</view>
+        </view>
+        <view>1周左右</view>
+        <view>另收费280</view>
+      </view>
+    </view>
+    <view class="form">
+      <view class="row">
+        <view>小规模纳税人:</view>
+        <view>一个月300左右，一年3600左右</view>
+      </view>
+      <view class="row">
+        <view>一般纳税人:</view>
+        <view>一个月500-600左右，一年6000-7200左右</view>
+      </view>
+      <view class="row">
+        <view>
+          <text>变更法人/\n经营范围其他:</text>
+        </view>
+        <view>
+          1000左右
+        </view>
+      </view>
+      <view class="row">
+        <view>注册公司:</view>
+        <view>
+          <view>有地址的:
+            <text style="color:#F14502">1500左右</text>，役地址的:
+            <text style="color:#F14502">2000-8000</text>范围</view>
+        </view>
+      </view>
+
+      <view class="row">
+        <view>变更地址:</view>
+        <view>看具体变更地址的远近，远的话2500-3000左右，近的话1500左右</view>
+      </view>
+    </view>
+  </view>
+</view>

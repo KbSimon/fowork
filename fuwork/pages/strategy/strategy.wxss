@@ -16,7 +16,6 @@
 .background {
   width: 650rpx;
   height: 2130rpx;
-  
 }
 
 .strategy{
@@ -27,8 +26,8 @@
 
 .one {
   width: 645rpx;
-  height: 265rpx;
-  padding: 290rpx 0 0 0;
+  height: 263rpx;
+  padding: 292rpx 0 0 0;
 }
 
 .title {
@@ -44,7 +43,7 @@
 }
 
 .two {
-  height: 246 xrpx;
+  height: 246rpx;
 }
 
 .three {

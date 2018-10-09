@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/strategy/strategy",
     "pages/index/index",
     "pages/mall/mall",
     "pages/details/details",
@@ -8,15 +7,18 @@
     "pages/login/login",
     "pages/register/register",
     "pages/password/password",
+    "pages/strategy/strategy",
     "pages/forget/forget",
     "pages/logs/logs",
     "pages/serve/serve",
     "pages/space/space",
+    "pages/policy/policy",
     "pages/mine/mine",
     "pages/check/check",
     "pages/rules/rules",
     "pages/hot/hot",
-    "pages/store/store" 
+    "pages/store/store",
+    "pages/invite/invite"
   ],
   "window": {
     "backgroundTextStyle": "light",

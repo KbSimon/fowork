@@ -4,7 +4,7 @@
     <image src="images/banner.png"></image>
   </view>
   <view class="serve">
-    <view>
+    <navigator hover-class="none">
       <view class="serve-left">
         <text>在线维修</text>
         <text>富创保洁，伴您同行</text>
@@ -13,8 +13,8 @@
       <view class="serve-right">
         <image src="images/serve.png" mode="scaleToFill"></image>
       </view>
-    </view>
-    <view>
+    </navigator>
+    <navigator hover-class="none">
       <view class="serve-left">
         <text>保洁</text>
         <text>富创保洁，伴您同行</text>
@@ -23,36 +23,36 @@
       <view class="serve-right">
         <image src="images/serve.png" mode="scaleToFill"></image>
       </view>
-    </view>
-    <view>
+    </navigator>
+    <navigator hover-class="none">
       <view class="serve-left">
         <text>搬家</text>
-        <text>富创保洁，伴您同行</text>
+        <text>搬家准时不误，24小时服务</text>
         <text>￥680起</text>
       </view>
       <view class="serve-right">
         <image src="images/serve.png" mode="scaleToFill"></image>
       </view>
-    </view>
-    <view>
+    </navigator>
+    <navigator hover-class="none">
       <view class="serve-left">
         <text>绿植</text>
-        <text>富创保洁，伴您同行</text>
+        <text>翠色欲滴，绿意盎然</text>
         <text>￥680起</text>
       </view>
       <view class="serve-right">
         <image src="images/serve.png" mode="scaleToFill"></image>
       </view>
-    </view>
-    <view>
+    </navigator>
+    <navigator hover-class="none" url="../policy/policy">
       <view class="serve-left">
-        <text>绿植</text>
-        <text>富创保洁，伴您同行</text>
+        <text>代理记账</text>
+        <text>公司注册，代理记账</text>
         <text>￥680起</text>
       </view>
       <view class="serve-right">
         <image src="images/tally.png" mode="scaleToFill"></image>
       </view>
-    </view>
+    </navigator>
   </view>
 </view>

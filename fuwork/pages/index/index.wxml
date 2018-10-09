@@ -1,12 +1,18 @@
 <!--index.wxml-->
 <view class="content">
   <!-- banner -->
-  <view class="banner">
-    <image src="images/swiper.png" class="swiper" mode="scaleToFill"></image>
-  </view>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper">
+    
+      <swiper-item bindtap="check">
+        <image src="images/swiper_01.png" width="100%" heght="420rpx;" class="img"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="images/swiper_02.png" width="100%" height="420rpx;" class="img"></image>
+      </swiper-item>
+  </swiper>
   <!-- 业务 -->
   <view class="service">
-  <navigator url="../space/space" class="space" hover-class="none">
+    <navigator url="../space/space" class="space" hover-class="none">
       <image src="images/work.png"></image>
       <text>办公租赁</text>
     </navigator>
@@ -34,7 +40,7 @@
         <image src="images/more.png"></image>
       </navigator>
     </view>
-    <view class="shop-content"> 
+    <view class="shop-content">
       <navigator class="clearfloat" url="../details/details" hover-class="none">
         <view class="shop-left">
           <image class="shop-img" src="images/shop.png"></image>
@@ -42,14 +48,14 @@
         <view class="shop-right">
           <text>LED小夜灯</text>
           <view class="rate">
-          <view class="price">
-            福利价
-            <text class="old">5</text>
-            <image src="images/icon.png" class="ico"></image>
-            <text class="new">80</text>
+            <view class="price">
+              福利价
+              <text class="old">5</text>
+              <image src="images/icon.png" class="ico"></image>
+              <text class="new">80</text>
+            </view>
+            <view class="only">5</view>
           </view>
-          <view class="only">5</view>
-        </view>
         </view>
       </navigator>
       <navigator class="clearfloat" url="../details/details" hover-class="none">
@@ -59,14 +65,14 @@
         <view class="shop-right">
           <text>LED小夜灯</text>
           <view class="rate">
-          <view class="price">
-            福利价
-            <text class="old">5</text>
-            <image src="images/icon.png" class="ico"></image>
-            <text class="new">80</text>
+            <view class="price">
+              福利价
+              <text class="old">5</text>
+              <image src="images/icon.png" class="ico"></image>
+              <text class="new">80</text>
+            </view>
+            <view class="only">5</view>
           </view>
-          <view class="only">5</view>
-        </view>
         </view>
       </navigator>
     </view>
@@ -80,7 +86,7 @@
       <navigator have-class="none" class="news-more" url="../message/message">
         <text>更多资讯</text>
         <image src="images/more.png"></image>
-      </navigator> 
+      </navigator>
     </view>
     <view class="news-content">
       <navigator class="clearfloat" url="" hover-class="none">

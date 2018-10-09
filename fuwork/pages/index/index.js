@@ -7,9 +7,20 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    indicatorDots: true,  //显示面板指示点
+    autoplay: true,     //自动切换
+    interval: 5000,    //自动切换时间间隔
+    duration: 1000,    //滑动动画时长
+   
   },
   //事件处理函数
+  check:function(){
+   wx.navigateTo({
+     url: '../check/check',
+   })
+  },
+
   bindViewTap: function() {
     wx.navigateTo({
       url: '../index/index'

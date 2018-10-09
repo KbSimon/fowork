@@ -1,0 +1,154 @@
+/* pages/policy/policy.wxss */
+
+page {
+  height: 100%;
+  margin: 0 30rpx;
+}
+
+.banner {
+  width: 690rpx;
+  height: 245rpx;
+}
+
+.banner>image {
+  width: 690rpx;
+  height: 245rpx;
+}
+
+.state {
+  text-align: center;
+  padding: 80rpx 0 0 0;
+}
+
+.quote>text, .state>text {
+  font-size: 34rpx;
+  color: #050505;
+  padding: 0 0 10rpx 0;
+  border-bottom: 4rpx solid #ff3131;
+}
+
+.state>view {
+  width: 690rpx;
+  font-size: 28rpx;
+  color: #5a5a5a;
+  text-align: justify;
+  margin: 40rpx 0 0 0;
+}
+
+.quote {
+  text-align: center;
+  margin: 105rpx 0 0 0;
+}
+
+.table {
+  margin: 85rpx 0 0 0;
+}
+
+.tr {
+  overflow: hidden;
+}
+
+.tr>view {
+  float: left;
+  /* width: 135rpx; *//* display: flex;
+  justify-content: center;
+  align-items: center; */
+  border: 1px solid #e8e8e8;
+}
+
+.tr>view:not(:last-child) {
+  border-right: none;
+}
+
+.tr:nth-child(1)>view {
+  height: 120rpx;
+  font-size: 24rpx;
+  color: #050505;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tr:not(:first-child)>view {
+  height: 150rpx;
+  font-size: 22rpx;
+  color: #5a5a5a;
+  line-height: 36rpx;
+  padding: 20rpx 0 0 0;
+}
+
+.tr:not(:last-child)>view {
+  border-bottom: none;
+}
+
+.tr>view:nth-child(1) {
+  width: 85rpx;
+}
+
+.tr>view:nth-child(2), .tr>view:nth-child(3) {
+  width: 150rpx;
+}
+
+.tr>view:nth-child(4) {
+  width: 140rpx;
+}
+
+.tr>view:nth-child(5) {
+  width: 120rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+}
+
+.form {
+  height: 460rpx;
+  margin: 100rpx auto 160rpx auto;
+}
+
+.row {
+  overflow: hidden;
+}
+
+.row>view {
+  float: left;
+  font-size: 24rpx;
+  color: #5a5a5a;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e8e8e8;
+}
+
+.row:not(:last-child)>view {
+  border-bottom: none;
+}
+
+.row>view:nth-child(1) {
+  width: 205rpx;
+  border-right: none;
+}
+
+.row>view:nth-child(2) {
+  width: 470rpx;
+}
+
+.row:nth-child(1)>view {
+  height: 80rpx;
+}
+
+.row:nth-child(2)>view {
+  height: 70rpx;
+}
+
+.row:nth-child(3)>view {
+  height: 90rpx;
+}
+
+.row:nth-child(4)>view, .row:nth-child(5)>view {
+  height: 105rpx;
+}
+
+.row:nth-child(4)>view:nth-child(2), .row:nth-child(5)>view:nth-child(2){
+  width: 380rpx;
+  padding: 0 55rpx 0 35rpx;
+}

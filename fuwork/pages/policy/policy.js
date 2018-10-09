@@ -1,4 +1,4 @@
-// pages/serve/serve.js
+// pages/policy/policy.js
 Page({
 
   /**
@@ -6,11 +6,6 @@ Page({
    */
   data: {
 
-  },
-  bindViewTap: function () {
-    wx.navigateTo({
-      url: '../policy/policy'
-    })
   },
 
   /**

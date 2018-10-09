@@ -9,7 +9,7 @@
   height: 250rpx;
 }
 
-.serve>view{
+.serve>navigator{
   height: 208rpx;
   display: flex;
   justify-content: space-between;

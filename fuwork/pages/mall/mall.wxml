@@ -1,8 +1,8 @@
 <!--pages/mall/mall.wxml-->
 <view class="content">
-  <view class="banner">
+  <navigator hover-class="none" class="banner" url="../strategy/strategy">
     <image src="images/banner.png"></image>
-  </view>
+  </navigator>
   <view class="head">
     <navigator hover-class="none" class="hot" url="../hot/hot">
       <image src="images/hot.png"></image>

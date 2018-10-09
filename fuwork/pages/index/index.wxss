@@ -4,10 +4,7 @@
   height: 100%;
 }
 
-.banner {
-  height: 420rpx;
-}
-
+.img,
 .swiper {
   width: 100%;
   height: 420rpx;

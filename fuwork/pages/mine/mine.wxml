@@ -21,10 +21,10 @@
       <text class="sum">18.00</text>
     </view>
     <view class="pay">
-      <navigator class="up">
+      <navigator class="up" hover-class="none">
         <text>充值</text>
       </navigator>
-      <navigator class="to">
+      <navigator class="to" hover-class="none">
         <text>提现</text>
       </navigator>
     </view>
@@ -50,38 +50,38 @@
   </view>
   <!-- 功能 -->
   <view class="action">
-    <navigator>
+    <navigator hover-class="none">
       <image src="images/icon.png"></image>
       <text>我的会员</text>
     </navigator>
-    <navigator>
+    <navigator hover-class="none">
       <image src="images/icon.png"></image>
       <text>会员拼单</text>
     </navigator>
-    <navigator>
+    <navigator hover-class="none">
       <image src="images/icon.png"></image>
       <text>企业商城</text>
     </navigator>
-    <navigator>
+    <navigator hover-class="none">
       <image src="images/icon.png"></image>
       <text>交易记录</text>
     </navigator>
-    <navigator>
+    <navigator hover-class="none">
       <image src="images/icon.png"></image>
       <text>意见反馈</text>
     </navigator>
-    <navigator>
+    <navigator hover-class="none">
       <image src="images/icon.png"></image>
       <text>我的收货地址</text>
     </navigator>
   </view>
   <!-- 设置 -->
   <view class="set">
-    <navigator>
+    <navigator hover-class="none">
       <image src="images/icon.png"></image>
       <text>设置</text>
     </navigator>
-    <navigator>
+    <navigator hover-class="none">
       <image src="images/icon.png"></image>
       <text>关于富创</text>
     </navigator>
