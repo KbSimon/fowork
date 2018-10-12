@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>下载富创空间</title>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0 auto;
+            max-width: 750px;
+            background: #fff16d;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        ul,
+        li,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        dt,
+        dd {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .clearfloat:after {
+            display: block;
+            clear: both;
+            content: '';
+            visibility: hidden;
+            height: 0
+        }
+
+        .clearfloat {
+            zoom: 1
+        }
+
+        main {
+            max-width: 750px;
+            margin: 0 auto;
+            height: 1207px;
+            background: url("images/bg-02.png") center no-repeat;
+        }
+
+        .title {
+            font-size: 37px;
+            padding: 195px 0 0 0;
+        }
+
+        .title,
+        .money {
+            color: #fff;
+            text-align: center;
+        }
+
+        .money {
+            font-size: 80px;
+        }
+
+        .money::after {
+            content: "元";
+            padding: 0 0 0 10px;
+        }
+
+        .download {
+            width: 612px;
+            height: 88px;
+            outline: none;
+            border: none;
+            display: block;
+            margin: 540px auto 0 auto;
+            line-height: 88px;
+            text-align: center;
+            color: #fff;
+            font-size: 36px;
+            letter-spacing: 2px;
+            background: rgba(255, 183, 58, 1);
+            border-radius: 44px;
+            box-shadow: 12px 0px 40px rgba(198, 126, 0, 0.45);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <p class="title">您的好友挣了</p>
+        <p class="money">80</p>
+        <button class="download">下载富创空间APP</button>
+    </main>
+</body>
+
+</html>
+<script>
+    var phoneScale = parseInt(window.screen.width) / 750;
+    document.write('<meta name="viewport" content="width=750, minimum-scale = ' + phoneScale + ', maximum-scale = ' +
+        phoneScale + ', target-densitydpi=device-dpi">');
+</script>

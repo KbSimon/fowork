@@ -67,14 +67,76 @@
     </view>
   </view>
   <view class="bar">
-    <navigator hover-class="none">
+    <view class="wire"></view>
+    <view class="how">
       <image class="how" src="images/question.png"></image>
       <text>如何赚取积分</text>
-    </navigator>
-    <navigator hover-class="none">
-      <view></view>
-      <image class="shop" src="images/gift.png"></image>
-      <text>积分商城</text>
-    </navigator>
+    </view>
+    <view class="wire"></view>
   </view>
 </view>
+<view class="task">新手任务</view>
+<view class="new-task">
+  <view class="clearfloat">
+    <view class="task-left">
+      <view>完善信息</view>
+      <view>完善账号设置中的头像、昵称和基本资料信息。</view>
+    </view>
+    <view class="task-right">
+      <button hover-class="none">去完善</button>
+    </view>
+  </view>
+  <view class="clearfloat">
+    <view class="task-left">
+      <view>绑定邮箱</view>
+      <view>绑定邮箱、微信、QQ。</view>
+    </view>
+    <view class="task-right">
+      <button hover-class="none">去绑定</button>
+    </view>
+  </view>
+  <view class="clearfloat">
+    <view class="task-left">
+      <view>实名认证</view>
+      <view>进行实名身份认证。</view>
+    </view>
+    <view class="task-right">
+      <button hover-class="none">去认证</button>
+    </view>
+  </view>
+</view>
+<view class="task">每日任务</view>
+<view class="everyday">
+  <view class="clearfloat">
+    <view class="task-left">
+      <view>签到</view>
+      <view>每日签到，签到一次可得10积分。</view>
+    </view>
+    <view class="task-right">
+      <button hover-class="none">去签到</button>
+    </view>
+  </view>
+  <view class="clearfloat">
+    <view class="task-left">
+      <view>查看企业</view>
+      <view>每天每查看1个企业可得1积分，重复查看不计分。</view>
+    </view>
+    <view class="task-right">
+      <button hover-class="none">去查看</button>
+    </view>
+  </view>
+  <view class="clearfloat">
+    <view class="task-left">
+      <view>分享</view>
+      <view>每天分享1次可得5积分。</view>
+    </view>
+    <view class="task-right">
+      <button hover-class="none">去分享</button>
+    </view>
+  </view>
+</view>
+<view class="task">
+<text>邀请好友</text>
+<button class="invite-btn">去邀请</button>
+</view>
+<view class="invite"></view>

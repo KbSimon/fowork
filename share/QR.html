@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>我的二维码</title>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0 auto;
+            max-width: 750px;
+            background: #f7c507;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        ul,
+        li,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        dt,
+        dd {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .clearfloat:after {
+            display: block;
+            clear: both;
+            content: '';
+            visibility: hidden;
+            height: 0
+        }
+
+        .clearfloat {
+            zoom: 1
+        }
+
+        main {
+            max-width: 750px;
+            margin: 0 auto;
+            height: 1207px;
+            background: url("images/bg-01.png") center no-repeat;
+        }
+
+        .title {
+            font-size: 36px;
+            color: #FF3131;
+            text-align: center;
+            padding: 100px 0 0 0;
+        }
+
+        .qr {
+            width: 414px;
+            height: 414px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 255px 0 0 179.5px;
+            background: #fff;
+            border-radius: 10px;
+        }
+
+        .qr>img {
+            width: 410px;
+            height: 380px;
+        }
+
+        .bottom {
+            width: 532px;
+            height: 184px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            margin: 105px auto 0 auto;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 10px;
+        }
+
+        .bottom>div{
+            flex: 1;
+            text-align: center;
+        }
+
+       
+        .wx>img,
+        .sao>img{
+            width: 86px;
+            height: 86px;
+        }
+        
+        .wx>p,
+        .sao>p{
+            color: #FF3131;
+            font-size: 36px;
+        }
+
+        .icon>img{
+            width: 28px;
+            height: 28px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <p class="title">扫码注册富创空间</p>
+        <div class="qr">
+            <img src="images/qr-01.png">
+        </div>
+        <div class="bottom">
+            <div class="wx">
+                <img src="images/wx.png">
+                <p>打开微信</p>
+            </div>
+            <div class="icon">
+                <img src="images/icon.png">
+            </div>
+            <div class="sao">
+                <img src="images/sao.png">
+                <p>扫一扫</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+<script>
+    var phoneScale = parseInt(window.screen.width) / 750;
+    document.write('<meta name="viewport" content="width=750, minimum-scale = ' + phoneScale + ', maximum-scale = ' +
+        phoneScale + ', target-densitydpi=device-dpi">');
+</script>

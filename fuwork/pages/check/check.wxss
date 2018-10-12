@@ -1,12 +1,19 @@
 /* pages/check/check.wxss */
 
+page {
+  height: 100%;
+  background: #f5f5f5;
+}
+
 .main {
-  margin: 0 30rpx;
+  padding: 0 30rpx;
+  background: #fff;
 }
 
 .header {
+  width: 100%;
   height: 280rpx;
-  margin: 30rpx 0 0 0;
+  padding: 30rpx 0 0 0;
 }
 
 .head {
@@ -110,12 +117,11 @@
   border-radius: 50%;
 }
 
-.check-top{
+.check-top {
   padding: 65rpx 0 0 0;
 }
 
-.check-top>view,
-.check-bottom>view{
+.check-top>view, .check-bottom>view {
   display: flex;
   float: left;
   flex-direction: column;
@@ -123,64 +129,126 @@
   align-items: center;
 }
 
-.check-top>view{
+.check-top>view {
   width: 172.5rpx;
 }
 
-.check-bottom>view{
+.check-bottom>view {
   width: 230rpx;
 }
 
-.check-top>view>image{
+.check-top>view>image {
   width: 110rpx;
   height: 94rpx;
-  padding: 20rpx 0 ;
+  padding: 20rpx 0;
 }
 
-.check-top>view>text,
-.check-bottom>view>text{
+.check-top>view>text, .check-bottom>view>text {
   font-size: 28rpx;
 }
 
-.check-bottom{
+.check-bottom {
   padding: 110rpx 0 0 0;
 }
 
-.check-bottom>view>image{
+.check-bottom>view>image {
   width: 160rpx;
   height: 90rpx;
-  padding: 20rpx 0 ;
+  padding: 20rpx 0;
 }
 
-.check-bottom>view:nth-child(2)>image{
+.check-bottom>view:nth-child(2)>image {
   width: 100rpx;
   height: 94rpx;
 }
 
-.active{
-  color: #FF3131;
+.active {
+  color: #ff3131;
 }
 
-.bar{
-  height: 35rpx;
+.bar {
+  height: 120rpx;
   display: flex;
   padding: 15px 0;
-}
-
-.bar>navigator{
-  width: 50%;
   font-size: 30rpx;
-  text-align: center;
- 
+  color: #050505;
+  justify-content: center;
+  align-items: center;
 }
 
-.bar>navigator:nth-child(1){
-  border-right: 1px solid #a2a2a2;
+.how {
+  margin: 0 20rpx;
 }
 
-.how,
-.shop{
+.how>image {
   width: 28rpx;
   height: 28rpx;
   margin: 0 10rpx 0 0;
+}
+
+.wire {
+  width: 210rpx;
+  height: 2rpx;
+  background: rgba(0, 0, 0, 1);
+}
+
+.task {
+  width: 750rpx;
+  height: 80rpx;
+  font-size: 26rpx;
+  padding: 0 30rpx;
+  line-height: 80rpx;
+  background: #f5f5f5;
+}
+
+.new-task {
+  height: 410rpx;
+  background: #fff;
+}
+
+.everyday {
+  height: 400rpx;
+  background: #fff;
+}
+
+.invite {
+  height: 215rpx;
+  background: #fff;
+}
+
+.task-left {
+  float: left;
+  padding: 50rpx 0 0 75rpx;
+}
+
+.task-left>view:nth-child(1) {
+  font-size: 28rpx;
+}
+
+.task-left>view:nth-child(2) {
+  font-size: 22rpx;
+  color: #9A9A9A;
+  padding: 10rpx 0 0 0;
+}
+
+.task-right{
+  float: right;
+  padding: 40rpx 40rpx 0 0;
+}
+
+button {
+  width: 123rpx;
+  height: 50rpx;
+  color: #fff;
+  padding: 0 0;
+  font-size: 26rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 1);
+}
+
+.invite-btn{
+  float: right;
+  margin: 15rpx 70rpx 0 0;
 }

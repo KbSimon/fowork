@@ -20,6 +20,11 @@ Page({
      url: '../check/check',
    })
   },
+  invite: function () {
+    wx.navigateTo({
+      url: '../invite/invite',
+    })
+  },
 
   bindViewTap: function() {
     wx.navigateTo({

@@ -73,39 +73,12 @@
   line-height: 80rpx;
 }
 
-/* 订单 */
-.bill{
-  height: 195rpx;
-  background: #fff;
-  margin: 25px 0;
-  background: #fff;
-  display: flex;
-}
-
-.bill>navigator{
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.bill>navigator>image{
-  max-width: 60rpx;
-  max-height: 60rpx;
-  vertical-align: middle;
-}
-
-.bill>navigator>text{
-  color:#5A5A5A;
-  font-size: 27rpx;
-  padding: 30rpx 0 0 0;
-}
 
 /* 功能 */
 .action{
-  height: 725rpx;
+  height: 490rpx;
   background: #fff;
+  margin: 25rpx 0 0 0;
 }
 
 .set>navigator,
@@ -136,7 +109,7 @@
 
 /* 设置 */
 .set{
-  height: 245rpx;
+  height: 370rpx;
   background: #fff;
   margin: 25rpx 0 180rpx 0;
 }

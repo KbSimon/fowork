@@ -1,2 +1,17 @@
 <!--pages/invite/invite.wxml-->
-<text>pages/invite/invite.wxml</text>
+<view class="main">
+  <view class="background">
+    <image src="images/bg.png" class="bg"></image>
+    <view class="details">
+      <view class="text">
+        <view>分享邀请成功,</view>
+        <text>积分+5</text>
+      </view>
+      <view class="text">
+        <view>好友下载后输入您的手机号，注册成功，</view>
+        <text>积分+40</text>
+      </view>
+      <button hover-class="none">立即邀请</button>
+    </view>
+  </view>
+</view>

@@ -1,81 +1,39 @@
 <!--index.wxml-->
-<view class="content">
+<view class="main">
   <!-- banner -->
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper">
-    
-      <swiper-item bindtap="check">
-        <image src="images/swiper_01.png" width="100%" heght="420rpx;" class="img"></image>
-      </swiper-item>
-      <swiper-item>
-        <image src="images/swiper_02.png" width="100%" height="420rpx;" class="img"></image>
-      </swiper-item>
+    <swiper-item bindtap="check">
+      <image src="images/swiper_01.png" width="100%" heght="420rpx;" class="img"></image>
+    </swiper-item>
+    <swiper-item bindtap="invite">
+      <image src="images/swiper_02.png" width="100%" height="420rpx;" class="img"></image>
+    </swiper-item>
   </swiper>
   <!-- 业务 -->
   <view class="service">
     <navigator url="../space/space" class="space" hover-class="none">
-      <image src="images/work.png"></image>
-      <text>办公租赁</text>
+      <image src="images/private.png"></image>
     </navigator>
     <navigator url="../serve/serve" class="space" hover-class="none">
       <image src="images/online.png"></image>
-      <text>在线服务</text>
     </navigator>
     <navigator url="../store/store" class="firm" hover-class="none">
-      <image src="images/semt.png"></image>
-      <text>企业社区</text>
-    </navigator>
-    <navigator url="../check/check" class="sign-in" hover-class="none">
-      <image src="images/sign.png"></image>
-      <text>签到有礼</text>
+      <image src="images/expand.png"></image>
     </navigator>
   </view>
-  <!-- 爆款商品 -->
-  <view class="shop">
-    <view class="shop-head clearfloat">
-      <view class="shop-title">
-        <text>爆款商品</text>
+  <view>
+    <!-- 公告 -->
+    <view class="notice">
+      <view class="notice-left">富创公告</view>
+      <view class="notice-right">富创资讯富创资讯富创资讯富创富创资讯富资讯富创资讯富创资讯富创资讯富创资讯富创富创资讯富资讯富创资讯
       </view>
-      <navigator url="../hot/hot" class="shop-more" hover-class="none">
-        <text>更多爆款</text>
-        <image src="images/more.png"></image>
-      </navigator>
     </view>
-    <view class="shop-content">
-      <navigator class="clearfloat" url="../details/details" hover-class="none">
-        <view class="shop-left">
-          <image class="shop-img" src="images/shop.png"></image>
-        </view>
-        <view class="shop-right">
-          <text>LED小夜灯</text>
-          <view class="rate">
-            <view class="price">
-              福利价
-              <text class="old">5</text>
-              <image src="images/icon.png" class="ico"></image>
-              <text class="new">80</text>
-            </view>
-            <view class="only">5</view>
-          </view>
-        </view>
-      </navigator>
-      <navigator class="clearfloat" url="../details/details" hover-class="none">
-        <view class="shop-left">
-          <image class="shop-img" src="images/shop.png"></image>
-        </view>
-        <view class="shop-right">
-          <text>LED小夜灯</text>
-          <view class="rate">
-            <view class="price">
-              福利价
-              <text class="old">5</text>
-              <image src="images/icon.png" class="ico"></image>
-              <text class="new">80</text>
-            </view>
-            <view class="only">5</view>
-          </view>
-        </view>
-      </navigator>
-    </view>
+    <!-- 广告 -->
+  </view>
+  <view class="ad">
+    <navigator hover-class="none" url="">
+      <image src="images/ad.png"></image>
+    </navigator>
   </view>
   <!-- 富创资讯 -->
   <view class="news">
@@ -117,15 +75,19 @@
   </view>
   <view class="bottom">
     <navigator hover-class="none">
-      <image src="images/store-active.png"></image>
-      <text>富创空间</text>
+      <image src="images/index-active.png"></image>
+      <text style="color:#FFB73A;">首页</text>
     </navigator>
     <navigator url="../mall/mall" hover-class="none">
-      <image src="images/store.png"></image>
-      <text>企业商城</text>
+      <image src="images/firm.png"></image>
+      <text>企业</text>
+    </navigator>
+    <navigator url="../mall/mall" hover-class="none">
+      <image src="images/task.png"></image>
+      <text>任务</text>
     </navigator>
     <navigator url="../mine/mine" hover-class="none">
-      <image src="images/store.png"></image>
+      <image src="images/mine.png"></image>
       <text>账户</text>
     </navigator>
   </view>

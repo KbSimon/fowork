@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/mine/mine",
     "pages/mall/mall",
     "pages/details/details",
     "pages/message/message",
@@ -13,12 +14,12 @@
     "pages/serve/serve",
     "pages/space/space",
     "pages/policy/policy",
-    "pages/mine/mine",
+    
+    "pages/invite/invite",
     "pages/check/check",
     "pages/rules/rules",
     "pages/hot/hot",
-    "pages/store/store",
-    "pages/invite/invite"
+    "pages/store/store"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -29,60 +29,37 @@
       </navigator>
     </view>
   </view>
-  <!-- 订单 -->
-  <view class="bill">
-    <navigator hover-class="none">
-      <image src="images/ico.png"></image>
-      <text>订单</text>
-    </navigator>
-    <navigator hover-class="none">
-      <image src="images/ico.png"></image>
-      <text>我的账单</text>
-    </navigator>
-    <navigator hover-class="none">
-      <image src="images/ico.png"></image>
-      <text>银行卡</text>
-    </navigator>
-    <navigator hover-class="none">
-      <image src="images/ico.png"></image>
-      <text>邀请好友</text>
-    </navigator>
-  </view>
   <!-- 功能 -->
   <view class="action">
     <navigator hover-class="none">
-      <image src="images/icon.png"></image>
-      <text>我的会员</text>
+      <image src="images/icon_01.png"></image>
+      <text>富创金融</text>
     </navigator>
     <navigator hover-class="none">
-      <image src="images/icon.png"></image>
-      <text>会员拼单</text>
+      <image src="images/icon_02.png"></image>
+      <text>银行卡</text>
     </navigator>
     <navigator hover-class="none">
-      <image src="images/icon.png"></image>
-      <text>企业商城</text>
-    </navigator>
-    <navigator hover-class="none">
-      <image src="images/icon.png"></image>
+      <image src="images/icon_03.png"></image>
       <text>交易记录</text>
     </navigator>
     <navigator hover-class="none">
-      <image src="images/icon.png"></image>
-      <text>意见反馈</text>
-    </navigator>
-    <navigator hover-class="none">
-      <image src="images/icon.png"></image>
-      <text>我的收货地址</text>
+      <image src="images/icon_04.png"></image>
+      <text>邀请好友</text>
     </navigator>
   </view>
   <!-- 设置 -->
   <view class="set">
     <navigator hover-class="none">
-      <image src="images/icon.png"></image>
+      <image src="images/icon_05.png"></image>
+      <text>意见反馈</text>
+    </navigator>
+    <navigator hover-class="none">
+      <image src="images/icon_06.png"></image>
       <text>设置</text>
     </navigator>
     <navigator hover-class="none">
-      <image src="images/icon.png"></image>
+      <image src="images/icon_07.png"></image>
       <text>关于富创</text>
     </navigator>
   </view>
@@ -94,6 +71,10 @@
     <navigator url="../store/store" hover-class="none">
       <image src="images/store.png"></image>
       <text>企业商城</text>
+    </navigator>
+     <navigator hover-class="none">
+      <image src="images/store-active.png"></image>
+      <text style="color:#E60012;">账户</text>
     </navigator>
     <navigator hover-class="none">
       <image src="images/store-active.png"></image>
