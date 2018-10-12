@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>我的收入</title>
+    <style>
+        html,
+        body {
+            padding: 0;
+            height: 100%;
+            margin: 0 auto;
+            max-width: 750px;
+            background: #fff36e;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        ul,
+        li,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        dt,
+        dd {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .clearfloat:after {
+            display: block;
+            clear: both;
+            content: '';
+            visibility: hidden;
+            height: 0
+        }
+
+        .clearfloat {
+            zoom: 1
+        }
+
+        main {
+            max-width: 750px;
+            margin: 0 auto;
+            height: 1207px;
+            background: url("images/bg-03.png") center no-repeat;
+        }
+
+        .title {
+            font-size: 37px;
+            padding: 195px 0 0 0;
+        }
+
+        .title,
+        .money {
+            color: #fff;
+            text-align: center;
+        }
+
+        .money {
+            font-size: 80px;
+        }
+
+        .money::after {
+            content: "元";
+            padding: 0 0 0 10px;
+        }
+
+        .qr {
+            width: 260px;
+            height: 260px;
+            margin: 365px auto 0 auto;
+        }
+
+        .qr>img {
+            width: 250px;
+            height: 240px;
+        }
+
+        .download {
+            width: 612px;
+            height: 88px;
+            color: #fff;
+            border: none;
+            outline: none;
+            font-size: 36px;
+            display: block;
+            margin: 115px auto 0 auto;
+            line-height: 88px;
+            text-align: center;
+            background: rgba(255, 49, 49, 1);
+            border-radius: 44px;
+            box-shadow: 12px 0px 40px rgba(184, 0, 0, 0.45);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <p class="title">我在这里挣了</p>
+        <p class="money">80</p>
+        <div class="qr">
+            <img src="images/qr-02.png">
+        </div>
+        <button class="download">长按识别二维码 一起赚钱</button>
+    </main>
+</body>
+
+</html>
+<script>
+    var phoneScale = parseInt(window.screen.width) / 750;
+    document.write('<meta name="viewport" content="width=750, minimum-scale = ' + phoneScale + ', maximum-scale = ' +
+        phoneScale + ', target-densitydpi=device-dpi">');
+</script>

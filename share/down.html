@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>邀请成功</title>
+    <style>
+        html,
+        body {
+            padding: 0;
+            height: 100%;
+            margin: 0 auto;
+            max-width: 750px;
+            background: #f85e67;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        ul,
+        li,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        dt,
+        dd {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .clearfloat:after {
+            display: block;
+            clear: both;
+            content: '';
+            visibility: hidden;
+            height: 0
+        }
+
+        .clearfloat {
+            zoom: 1
+        }
+
+        main {
+            max-width: 750px;
+            margin: 0 auto;
+            height: 1207px;
+            background: url("images/bg-04.png") center no-repeat;
+        }
+
+        .message {
+            width: 500px;
+            height: 285px;
+            color: #fff;
+            padding: 660px 0 0 0;
+            margin: 0 auto;
+            text-align: center;
+            /* margin: 610px auto 0 auto; */
+        }
+
+        .message>p:nth-child(1) {
+            font-size: 41px;
+            line-height: 50px;
+        }
+
+        .message>p:nth-child(2) {
+            font-size: 27px;
+            line-height: 50px;
+        }
+
+        .download {
+            width: 612px;
+            height: 88px;
+            color: #fff;
+            display: block;
+            font-size: 36px;
+            line-height: 88px;
+            text-align: center;
+            border-radius: 44px;
+            letter-spacing: 2px;
+            margin: 100px auto 0 auto;
+            background: rgba(255, 183, 58, 1);
+            border: 2px solid rgba(255, 255, 255, 1);
+            box-shadow: 12px 0px 40px rgba(255, 171, 24, 0.45);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="message">
+            <p>看广告，赚钱花</p>
+            <p>用碎片化的时间去赚更多的钱</p>
+        </div>
+        <button class="download">下载富创空间APP</button>
+    </main>
+</body>
+
+</html>
+<script>
+    var phoneScale = parseInt(window.screen.width) / 750;
+    document.write('<meta name="viewport" content="width=750, minimum-scale = ' + phoneScale + ', maximum-scale = ' +
+        phoneScale + ', target-densitydpi=device-dpi">');
+</script>
