@@ -1,0 +1,23 @@
+<!--pages/register/register.wxml-->
+<view class="content">
+  <view class="logo">
+    <image src="images/logo.png"></image>
+  </view>
+  <view class="form">
+    <view class="name">
+      <image src="images/phone.png" class="ico"></image>
+      <input type="number" class="name-input" placeholder="请输入手机号" placeholder-style="color:#9A9A9A" maxlength="11" bindblur="nameInput"></input>
+      <image class="close" src="images/close.png"></image>
+    </view>
+    <view class="password">
+      <image src="images/number.png" class="ico"></image>
+      <input password class="password-input" placeholder="请输入密码" placeholder-style="color:#9A9A9A" maxlength="16" name="password" bindblur="passwordInput"></input>
+      <image src="" class="see"></image>
+    </view>
+    <view class="code">
+      <image src="images/code.png" class="ico"></image>
+      <input type="number" class="code-input" placeholder="推荐码(推荐人手机号，可不填)" placeholder-style="color:#9A9A9A" maxlength="11"></input>
+    </view>
+     <button class="code-btn" bindtap="loginBtn">发送手机验证码</button>
+  </view>
+</view>

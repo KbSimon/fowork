@@ -1,0 +1,51 @@
+/* pages/invite/invite.wxss */
+page{
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.background {
+  height: 1193rpx;
+  position: relative;
+}
+
+
+.bg {
+  width: 100%;
+  height: 1193rpx;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.details {
+  top: 480rpx;
+  left: 0;
+  position: absolute;
+}
+
+.text {
+  width: 750rpx;
+  display: flex;
+  font-size: 27rpx;
+  line-height: 40rpx;
+  justify-content: center;
+  align-items: center;
+  padding: 25rpx 0 0 0;
+}
+
+.text>text {
+  color: #ff3131;
+}
+
+button {
+  width: 463rpx;
+  height: 90rpx;
+  color: #ffff;
+  text-align: center;
+  line-height: 90rpx;
+  font-size: 38rpx;
+  background: rgba(118, 63, 190, 1);
+  border-radius: 45rpx;
+  margin: 60rpx auto 0 auto;
+}

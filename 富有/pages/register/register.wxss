@@ -1,0 +1,60 @@
+/* pages/register/register.wxss */
+
+page {
+  height: 100%;
+}
+
+.content {
+  height: 100%;
+}
+
+.logo {
+  width: 324rpx;
+  height: 34rpx;
+  margin: 0 auto;
+  padding: 120rpx 0 180rpx 0;
+}
+
+.logo>image {
+  width: 324rpx;
+  height: 34rpx;
+}
+
+.form {
+  width: 595rpx;
+  height: 500rpx;
+  margin: 0 auto;
+}
+
+.code, .name, .password {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  padding: 40rpx 0 0 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.name-input,.code-input, .password-input {
+  width: 525rpx;
+  height: 90rpx;
+  font-size: 36rpx;
+  padding: 0 0 0 20rpx;
+}
+
+.ico, .see, .close {
+  width: 34rpx;
+  height: 34rpx;
+}
+
+.code-btn {
+  display: block;
+  width: 590rpx;
+  height: 84rpx;
+  color: #fff;
+  font-size: 36rpx;
+  line-height: 84rpx;
+  text-align: center;
+  margin: 145rpx 0 0 0;
+  background: rgba(255, 49, 49, 1);
+  border-radius: 42px;
+}

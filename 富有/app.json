@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/task/task",
+    
+    "pages/register/register",
+    "pages/password/password",
+    "pages/forget/forget",
+    "pages/logs/logs",
+    "pages/rules/rules"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "FUWORK",
+    "navigationBarTextStyle": "black"
+  }
+}
