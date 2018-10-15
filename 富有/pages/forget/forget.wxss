@@ -51,6 +51,10 @@ page {
   border-radius: 33px;
 }
 
+button::after {
+  border: none;
+}
+
 .see {
   width: 198rpx;
   height: 66rpx;

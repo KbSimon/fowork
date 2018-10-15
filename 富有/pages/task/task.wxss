@@ -85,13 +85,12 @@ page {
   top: 55rpx;
   width: 111rpx;
   height: 42rpx;
-  opacity: 0.4;
   color: #fff;
   position: absolute;
   line-height: 42rpx;
   text-align: center;
   font-size: 22rpx;
-  background: rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0.4);
   border-top-left-radius: 20rpx;
   border-bottom-left-radius: 20rpx;
 }

@@ -8,6 +8,13 @@ Page({
 
   },
 
+  bindViewTap: function () {
+    wx.navigateTo({
+      url: '../rules/rules'
+    })
+  },
+
+
   /**
    * 生命周期函数--监听页面加载
    */

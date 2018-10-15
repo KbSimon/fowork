@@ -30,14 +30,13 @@ Page({
   },
 
   nameInput: function(e) {
-    console.log(e)
     let userName = e.detail.value;
     let myreg = /^13[\d]{9}$|^14[5,7]{1}\d{8}$|^15[^4]{1}\d{8}$|^17[0,3,6,7,8]{1}\d{8}$|^18[\d]{9}$/;
     if (userName.length < 11) {
-      // wx.showModal({
-      //   title: '提示',
-      //   content: '请输入11位手机号码',
-      // })
+      wx.showModal({
+        title: '提示',
+        content: '请输入11位手机号码',
+      })
     } else if (!myreg.test(userName)) {
       wx.showModal({
         title: '提示',
@@ -67,8 +66,6 @@ Page({
 
   loginBtn: function(a) {
    let that =this;
-   console.log(that);
-   console.log();
     if (that.data.userName.length == 0){
       wx.showModal({
         title: '提示',
@@ -89,7 +86,7 @@ Page({
        success:res=>{
          let status = res.data.status;
          if(status ==1){
-           wx.switchTab({
+           wx.navigateTo({
              url: '../task/task',
            })
          }else{

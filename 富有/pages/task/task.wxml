@@ -40,7 +40,7 @@
         </view>
       </view>
     </view>
-    <navigator url='' hover-class="none" class="rules">积分规则</navigator>
+    <navigator url='../rules/rules' hover-class="none" class="rules">积分规则</navigator>
   </view>
   <view class="teach">
     <view class="line"></view>

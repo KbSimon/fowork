@@ -64,7 +64,7 @@ Page({
         title: '提示',
         content: '请输入6-16位密码',
       })
-    }else{
+    } else{
       wx.navigateTo({
         url: '../password/password',
       })

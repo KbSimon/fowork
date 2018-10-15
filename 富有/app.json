@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/login/login",
     "pages/task/task",
+    "pages/forget/forget",
+    "pages/password/password",
+    "pages/login/login",
     
     "pages/register/register",
-    "pages/password/password",
-    "pages/forget/forget",
     "pages/logs/logs",
     "pages/rules/rules"
   ],

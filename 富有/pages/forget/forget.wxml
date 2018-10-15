@@ -4,26 +4,26 @@
   <view class="form">
     <view class="name clearfloat">
       <view>手机号码:</view>
-      <input type="number" class="name-input" placeholder="请输入手机号" placeholder-style="color:#9A9A9A" maxlength="11"></input>
+      <input type="number" class="name-input" placeholder="请输入手机号" placeholder-style="color:#9A9A9A" maxlength="11" bindblur="nameInput"></input>
     </view>
     <view class="img-code clearfloat">
       <view>图文验证码:</view>
-      <input type="text" class="img-input" placeholder="请输入图文密码" placeholder-style="color:#9A9A9A" maxlength="20"></input>
-      <image src="" class="see"></image>
+      <input type="text" class="img-input" placeholder="请输入图文密码" placeholder-style="color:#9A9A9A" maxlength="4" bindblur="imgCodeInput"></input>
+      <image src="http://www.fuminjf.com/v1/public/verify" class="see" bindtap="getImageSrc" data-imgsrc="http://www.fuminjf.com/v1/public/verify"></image>
     </view>
     <view class="code clearfloat">
       <view>手机验证码:</view>
-      <input type="number" class="code-input" placeholder="请输入手机验证码" placeholder-style="color:#9A9A9A" maxlength="6"></input>
-      <button class="send">获取验证码</button>
+      <input type="number" class="code-input" placeholder="请输入手机验证码" placeholder-style="color:#9A9A9A" maxlength="6" bindblur="codeInput"></input>
+      <button class="send" bindtap="send" disabled="{{bollean}}">{{mailCode}}</button>
     </view>
     <view class="pwd clearfloat">
       <view>新密码:</view>
-      <input password class="pwd-input" placeholder="请设置6-16位密码" placeholder-style="color:#9A9A9A" maxlength="16"></input>
+      <input password class="pwd-input" placeholder="请设置6-16位密码" placeholder-style="color:#9A9A9A" minlength="6" maxlength="16" bindblur="passwordInput"></input>
     </view>
     <view class="pwd-again clearfloat">
       <view>确认新密码:</view>
-       <input password class="again-input" placeholder="再次确认密码" placeholder-style="color:#9A9A9A" maxlength="16"></input>
+       <input password class="again-input" placeholder="再次确认密码" placeholder-style="color:#9A9A9A" minlength="6" maxlength="16" bindblur="pwdAgainInput"></input>
     </view>
-    <button class="save" hover-class="none">保存</button>
+    <button class="save" hover-class="none" bindtap="saveBtn">保存</button>
   </view>
 </view>
