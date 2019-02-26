@@ -34,16 +34,36 @@ page {
   border-bottom: 1px solid #e8e8e8;
 }
 
-.name-input,.code-input, .password-input {
+.name-input, .code-input, .password-input {
   width: 525rpx;
   height: 90rpx;
   font-size: 36rpx;
   padding: 0 0 0 20rpx;
 }
 
+.password-input {
+  width: 345rpx;
+}
+
+.imgCode {
+  width: 198rpx;
+  height: 66rpx;
+  border-radius: 33rpx;
+}
+
 .ico, .see, .close {
   width: 34rpx;
   height: 34rpx;
+}
+
+.send {
+  width: 240rpx;
+  height: 66rpx;
+  color: #fff;
+  font-size: 30rpx;
+  line-height: 66rpx;
+  background: rgba(255, 49, 49, 1);
+  border-radius: 33px;
 }
 
 .code-btn {

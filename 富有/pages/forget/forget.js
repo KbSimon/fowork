@@ -1,4 +1,5 @@
 // pages/forget/forget.js
+const app = getApp()
 Page({
 
   /**
@@ -13,6 +14,7 @@ Page({
     mailCode: "发送验证码",
     boolean: false,
     isChecked: false,
+    img: app.globalData.API + "/v1/public/verify"
   },
 
   // 手机号
@@ -49,6 +51,15 @@ Page({
         imgCode: e.detail.value
       })
     }
+  },
+
+  // 刷新图片验证码
+  getImageSrc: function(e) {
+    let pic = e.target.dataset.imgsrc;
+    console.log(pic)
+    this.setData({
+      img: pic + '?k=register&timenow=' + Math.random(),
+    })
   },
 
   codeInput: function(e) {
@@ -93,23 +104,6 @@ Page({
     }
   },
 
-  // 图片验证码
-  getImageSrc: function(res) {
-    wx.request({
-      url: 'https://www.fuminjf.com/v1/public/verify',
-      success: res => {
-        let oStatus = res.data.status;
-        if (oStatus = 1) {
-
-        } else(
-          this.setData({
-            imgCode: e.detail.value
-          })
-        )
-      }
-    }, );
-  },
-
   send: function(e) {
     var pre = this.data;
     console.log(pre)
@@ -148,8 +142,9 @@ Page({
             }
           }, 1000)
         } else {
-          this.setData({
-            code: e.detail.value
+          wx.showModal({
+            title: '提示',
+            content: phoneTip,
           })
         }
       }
@@ -159,6 +154,7 @@ Page({
   // 保存
   saveBtn: function(e) {
     let that = this;
+    console.log(this)
     if (that.data.userName.length < 11) {
       wx.showModal({
         title: '提示',
@@ -190,14 +186,35 @@ Page({
         content: '两次密码不一致',
       })
     } else {
-      wx.showToast({
-        title: '注册成功',
-        icon: 'success',
-        duration: 3000,
+      wx.request({
+        url: 'https://www.fuminjf.com/v1/user/forgot',
+        data: {
+          mobile: that.data.userName,
+          pass:that.data.password,
+          confirm_pass:that .data.pwdAgain,
+          code: that.data.imgCode
+        },
         success: res => {
-          wx.navigateTo({
-            url: '../login/login',
-          })
+          //成功的话直接跳转到首页
+          let oStatus = res.data.status;
+          let phoneTip = res.data.info;
+          if (oStatus == 1) {
+            wx.showToast({
+              title: '注册成功',
+              icon: 'success',
+              duration: 3000,
+              success: res => {
+                wx.navigateTo({
+                  url: '../login/login',
+                })
+              }
+            })
+          } else {
+            wx.showModal({
+              title: '提示',
+              content: phoneTip,
+            })
+          }
         }
       })
     }

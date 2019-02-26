@@ -1,0 +1,30 @@
+{
+  "pages": [
+   
+    "pages/login/login",
+    "pages/register/register",
+    "pages/forget/forget",
+    "pages/register/deal",
+    "pages/house/house",
+    "pages/house/details",
+    "pages/house/order",
+    "pages/firm/firm",
+    "pages/firm/banner",
+    "pages/firm/company",
+    "pages/essay/news",
+    "pages/essay/essay",
+    "pages/task/task",
+    "pages/task/invite",
+    "pages/task/details",
+    "pages/money/money",
+    "pages/logs/logs",
+    "pages/task/rules"
+  ],
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "富创同城",
+    "navigationBarTextStyle": "black"
+  }
+}

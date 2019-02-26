@@ -1,0 +1,8 @@
+<!--pages/logs/test.wxml-->
+
+<view class='box'>
+  <view class='box-container' wx:for="{{list}}" wx:key="list">
+    <view class="{{index==idx?'_left':'left'}}" bindtap='goIndex' data-index="{{index}}">{{item.num}}</view>
+  </view>
+</view>
+

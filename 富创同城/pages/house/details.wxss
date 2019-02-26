@@ -1,0 +1,111 @@
+/* pages/house/details.wxss */
+@import "../wxParse/wxParse.wxss";
+
+page {
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+}
+
+.banner {
+  height: 420rpx;
+}
+
+.banner>image {
+  width: 100%;
+  height: 420rpx;
+}
+
+.msg {
+  background: #fff;
+}
+
+.msg-top {
+  padding: 30rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+
+.title {
+  font-size: 34rpx;
+}
+
+.rent {
+  display: flex;
+  padding-top: 5rpx;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.money {
+  font-size: 34rpx;
+  color: #ff2e2e;
+}
+
+.money>text:nth-child(2) {
+  font-size: 24rpx;
+}
+
+.time {
+  font-size: 22rpx;
+  color: #9a9a9a;
+  line-height: 45rpx;
+}
+
+.msg-bottom {
+  padding: 35rpx 30rpx;
+  font-size: 26rpx;
+  color: #5a5a5a;
+}
+
+.msg-bottom>text {
+  width: 50%;
+  line-height: 50rpx;
+  display: inline-block;
+}
+
+.details {
+  margin-top: 25rpx;
+  background: #fff;
+  padding: 30rpx 45rpx 40rpx 40rpx;
+  margin-bottom: 100rpx;
+}
+
+.text {
+  font-size: 28rpx;
+  color: #5a5a5a;
+  text-align: justify;
+  line-height: 40rpx;
+  padding-top: 10rpx;
+}
+
+.tab-bar {
+  bottom: 0;
+  width: 100%;
+  height: 110rpx;
+  background: #fff;
+  position: fixed;
+  font-size: 32rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1rpx solid #e8e8e8;
+}
+
+.order, .phone {
+  width: 220rpx;
+  height: 75rpx;
+  text-align: center;
+  border-radius: 37rpx;
+  line-height: 75rpx;
+}
+
+.order {
+  border: 1px solid rgba(255, 46, 46, 1);
+}
+
+.phone {
+  color: #fff;
+  background: rgba(255, 46, 46, 1);
+}

@@ -1,4 +1,5 @@
 // pages/register/register.js
+const app = getApp()
 Page({
 
   /**
@@ -6,14 +7,17 @@ Page({
    */
   data: {
     userName: "",
-    password: ""
+    password: "",
+    img: app.globalData.API + "/v1/public/verify"
   },
+
   bindViewTap: function() {
     wx.navigateTo({
       url: '../password/password'
     })
   },
 
+  // 手机号
   nameInput: function(e) {
     console.log(e)
     let userName = e.detail.value;
@@ -35,13 +39,13 @@ Page({
     }
   },
 
-
+  // 图形验证码
   passwordInput: function(e) {
     let password = e.detail.value;
-    if (password.length < 6 || password.length > 16) {
+    if (password.length < 4) {
       // wx.showModal({
       //   title: '提示',
-      //   content: '请输入6-16位密码',
+      //   content: '请输入验证码',
       // })
     } else {
       this.setData({
@@ -50,24 +54,56 @@ Page({
     }
   },
 
+  // 刷新图片验证码
+  getImageSrc: function(e) {
+    let pic = e.target.dataset.imgsrc;
+    console.log(pic)
+    this.setData({
+      img: pic + '?k=register&timenow=' + Math.random(),
+    })
+  },
+
+  // 发送验证码
   loginBtn: function(a) {
     let that = this;
     console.log(that);
-    console.log();
-    if (that.data.userName.length == 0) {
+    if (that.data.userName.length < 11) {
       wx.showModal({
         title: '提示',
         content: '请输入11位手机号码',
       })
-    } else if (that.data.password.length == 0) {
+    } else if (that.data.password.length < 4) {
       wx.showModal({
         title: '提示',
-        content: '请输入6-16位密码',
+        content: '请输入验证码',
       })
-    } else{
-      wx.navigateTo({
-        url: '../password/password',
+    } else {
+      var pre = this.data;
+      console.log(pre)
+      wx.request({
+        url: app.globalData.API + '/v1/public/get_verif_code',
+        data: {
+          mobile: pre.userName,
+          code_type: "1",
+          code: pre.password,
+        },
+        success: res => {
+          //成功的话直接跳转到首页
+          let oStatus = res.data.status;
+          let phoneTip = res.data.info;
+          if (oStatus == 1) {
+            wx.navigateTo({
+              url: '../password/password?phone=' + that.data.userName + '&imgCode=' + that.data.password,
+            })
+          } else {
+            wx.showModal({
+              title: '提示',
+              content: res.data.info,
+            })
+          }
+        }
       })
+
     }
   },
 

@@ -1,0 +1,2 @@
+<!--pages/jump/banner.wxml-->
+<web-view wx:if="{{src.length !==0 }}" src="{{src}}" style="width:750rpx;"></web-view>

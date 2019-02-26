@@ -1,0 +1,46 @@
+/* pages/details/details.wxss */
+page{
+  height: 100%;
+}
+
+.main{
+  padding: 0 20rpx;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.head{
+  display: flex;
+  padding: 30rpx 0 10rpx 0;
+  justify-content: space-between;
+}
+
+.source{
+  font-size: 30rpx;
+  color:#050505;
+}
+
+.add{
+  color: #FF3131;
+  font-size: 28rpx;
+}
+
+.add::before{
+  content: "+"
+}
+
+.balance{
+  color:#FF3131;
+  font-size: 24rpx;
+}
+
+.balance::before{
+  content: "当前积分：";
+  color: #9A9A9A;
+  font-size: 24rpx;
+}
+
+.time{
+  color: #9A9A9A;
+  font-size: 22rpx;
+  padding: 20rpx 0 20rpx 0;
+}

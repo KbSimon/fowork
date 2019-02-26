@@ -1,0 +1,2 @@
+<!--pages/jump/one.wxml-->
+<web-view src="{{src}}" bindtap="click"></web-view>

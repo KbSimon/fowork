@@ -9,7 +9,7 @@
     <view class="img-code clearfloat">
       <view>图文验证码:</view>
       <input type="text" class="img-input" placeholder="请输入图文密码" placeholder-style="color:#9A9A9A" maxlength="4" bindblur="imgCodeInput"></input>
-      <image src="http://www.fuminjf.com/v1/public/verify" class="see" bindtap="getImageSrc" data-imgsrc="http://www.fuminjf.com/v1/public/verify"></image>
+      <image src="{{img}}" class="see" bindtap="getImageSrc" data-imgsrc="https://www.fuminjf.com/v1/public/verify"></image>
     </view>
     <view class="code clearfloat">
       <view>手机验证码:</view>

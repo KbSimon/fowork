@@ -1,18 +1,69 @@
 // pages/password/password.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    code: "",
+    phone: "",
+    imgCode: "",
     password: "",
-    pwdAgain: ""
+    pwdAgain: "",
+    mailCode: "发送验证码",
   },
 
   bindViewTap: function() {
     wx.navigateTo({
       url: '../login/login'
+    })
+  },
+
+  // 发送验证码
+  send: function(e) {
+    var pre = this.data;
+    console.log(pre)
+    wx.request({
+      url: app.globalData.API + '/v1/public/get_verif_code',
+      data: {
+        mobile: pre.phone,
+        code_type: "1",
+        code: pre.imgCode,
+      },
+      success: res => {
+        //成功的话直接跳转到首页
+        let oStatus = res.data.status;
+        let phoneTip = res.data.info;
+        if (oStatus == 1) {
+          //倒计时
+          let time = null;
+          let that = this;
+          let pre = this.data;
+          let num = 60;
+          time = setInterval(function() {
+            if (num > 1) {
+              num--;
+              that.setData({
+                mailCode: num + 's',
+                isChecked: true,
+                boolean: true
+              })
+            } else {
+              that.setData({
+                mailCode: '重新发送',
+                isChecked: false,
+                boolean: false
+              });
+              clearInterval(time);
+            }
+          }, 1000)
+        } else {
+          wx.showModal({
+            title: '提示',
+            content: res.data.info,
+          })
+        }
+      }
     })
   },
 
@@ -30,7 +81,7 @@ Page({
     }
   },
 
-
+  // 密码
   passwordInput: function(e) {
     let password = e.detail.value;
     if (password.length < 6 || password.length > 16) {
@@ -44,7 +95,7 @@ Page({
       })
     }
   },
-
+  // 重复密码
   pwdAgainInput: function(e) {
     let pwdAgain = e.detail.value;
     console.log(pwdAgain)
@@ -60,6 +111,7 @@ Page({
     }
   },
 
+  // 完成注册
   doneBtn: function(a) {
     let that = this;
     if (that.data.code.length == 0) {
@@ -83,14 +135,35 @@ Page({
         content: '两次密码不一致',
       })
     } else {
-      wx.showToast({
-        title: '注册成功',
-        icon: 'success',
-        duration: 3000,
+      wx.request({
+        url: 'https://www.fuminjf.com/v1/user/forgot',
+        data: {
+          mobile: that.data.userName,
+          pass: that.data.password,
+          confirm_pass: that.data.pwdAgain,
+          code: that.data.imgCode
+        },
         success: res => {
-          wx.navigateTo({
-            url: '../login/login',
-          })
+          //成功的话直接跳转到首页
+          let oStatus = res.data.status;
+          let phoneTip = res.data.info;
+          if (oStatus == 1) {
+            wx.showToast({
+              title: '注册成功',
+              icon: 'success',
+              duration: 3000,
+              success: res => {
+                wx.navigateTo({
+                  url: '../login/login',
+                })
+              }
+            })
+          } else {
+            wx.showModal({
+              title: '提示',
+              content: phoneTip,
+            })
+          }
         }
       })
     }
@@ -100,7 +173,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    console.log(options)
+    this.setData({
+      phone: options.phone,
+      imgCode: options.imgCode,
+    })
   },
 
   /**

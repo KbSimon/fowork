@@ -1,0 +1,191 @@
+/* pages/house/house.wxss */
+
+page {
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+}
+
+.header {
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 160rpx;
+  position: fixed;
+  font-size: 32rpx;
+  background: #f5f5f5;
+}
+
+.header-top {
+  height: 80rpx;
+}
+
+.header-top>navigator {
+  width: 50%;
+  float: left;
+  line-height: 80rpx;
+  text-align: center;
+}
+
+.active {
+  color: #05c000;
+}
+
+.left{
+  color: #333;
+}
+
+.border {
+  width: 30rpx;
+  height: 4rpx;
+  margin: -10rpx auto;
+  background: rgba(5, 192, 0, 1);
+  border-radius: 2rpx;
+}
+
+/* 筛选条件 */
+
+.header-bottom {
+  height: 80rpx;
+  line-height: 65rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+
+.header-bottom>view {
+  width: 25%;
+  float: left;
+  font-size: 26rpx;
+  text-align: center;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+
+.header-bottom>view::after {
+  content: "▼";
+  position: absolute;
+  font-size: 18rpx;
+  padding: 0rpx 0rpx 0 10rpx;
+}
+
+/* 筛选条件 */
+
+.term {
+  width: 100%;
+  z-index: 2;
+  color: #050505;
+  font-size: 30rpx;
+  background: #fff;
+}
+
+/* 地区 */
+
+.zone {
+  overflow: hidden;
+  height: 810rpx;
+}
+
+.zone-left {
+  width: 329rpx;
+  float: left;
+  text-align: center;
+  border-right: 1rpx solid #e8e8e8;
+}
+
+.zone-left>view, .zone-right>view {
+  height: 90rpx;
+  line-height: 90rpx;
+}
+
+.zone-right {
+  width: 420rpx;
+  height: 100%;
+  float: right;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+/* 列表 */
+
+.item {
+  margin-top: 180rpx;
+}
+
+.item>view:last-child {
+  margin-bottom: 80rpx;
+}
+
+.list {
+  overflow: hidden;
+  padding: 40rpx 45rpx 30rpx 30rpx;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.list-left {
+  float: left;
+}
+
+.thumb {
+  width: 280rpx;
+  height: 210rpx;
+  border-radius: 8rpx;
+}
+
+.title {
+  font-size: 30rpx;
+  color: #121212;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.type, .area {
+  font-size: 26rpx;
+  color: #9a9a9a;
+}
+
+.price {
+  font-size: 34rpx;
+  color: #f00;
+}
+
+.tab-bar {
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  background: rgba(250, 250, 250, 1);
+}
+
+.tab-bar>navigator {
+  width: 50%;
+  float: left;
+  display: flex;
+  font-size: 20rpx;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-bar>navigator>image {
+  width: 56rpx;
+  height: 56rpx;
+}
+
+/* 遮罩层 */
+
+.mask {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #999;
+  opacity: 0.6;
+}

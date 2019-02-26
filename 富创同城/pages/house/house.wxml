@@ -1,0 +1,77 @@
+<!--房源-->
+<view class="main">
+  <view class="header">
+    <!-- 筛选条件 -->
+    <view class="header-bottom">
+      <view bindtap="area" style="color:{{color1}}">
+        <text>{{area}}</text>
+        <view class="badge">{{badge1}}</view>
+      </view>
+      <view bindtap="acreage" style="color:{{color2}}">
+        <text>{{acreage}}</text>
+        <view class="badge">{{badge2}}</view>
+      </view>
+      <view bindtap="sort" style="color:{{color3}}">
+        <text>{{sort}}</text>
+        <view class="badge">{{badge3}}</view>
+      </view>
+      <view bindtap="choose" style="color:{{color4}}">
+        <text>{{choose}}</text>
+        <view class="badge">{{badge4}}</view>
+      </view>
+    </view>
+    <!-- 筛选 -->
+    <view class="term">
+      <!-- 地区 -->
+      <view class="zone" style="display:{{zone}}">
+        <view wx:for="{{district}}" wx:item="item" wx:key="district">
+          <view class="{{index==idx1?'active':'left'}}" bindtap='zone' data-index="{{index}}" data-text="{{item.name}}" data-adcode="{{item.adcode}}">{{item.name}}</view>
+        </view>
+      </view>
+      <!-- 面积 -->
+      <view class="haLump" style="display:{{haLump}}">
+        <view wx:for="{{lump2}}" wx:item="item" wx:key="lump2">
+          <view class="{{index==idx2?'active':'left'}}" bindtap='haLump' data-index="{{index}}" data-text="{{item.title}}" data-id="{{item.id}}">{{item.title}}</view>
+        </view>
+      </view>
+      <!-- 默认排序 -->
+      <view class="rank" style="display:{{rank}}">
+        <view wx:for="{{lump3}}" wx:item="item" wx:key="lump3">
+          <view class="{{index==idx3?'active':'left'}}" bindtap='rank' data-index="{{index}}" data-text="{{item.title}}" data-id="{{item.id}}">{{item.title}}</view>
+        </view>
+      </view>
+      <!-- 筛选 -->
+      <view class="screen" style="display:{{screen}}">
+        <view wx:for="{{lump4}}" wx:item="item" wx:key="lump4">
+          <view class="{{index==idx4?'active':'left'}}" bindtap='screen' data-index="{{index}}" data-text="{{item.num}}">{{item.num}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 地产列表 -->
+  <view class="item">
+    <navigator url="../house/details?id={{item.id}}" hover-class="none" class="list" wx:for="{{house}}" wx:item="item" wx:key="house">
+      <view class="list-left">
+        <image src="{{item.show_img}}" class="thumb"></image>
+      </view>
+      <view class="list-right">
+        <view class="title">{{item.title}}</view>
+        <view class="type">{{item.area}}㎡</view>
+        <view class="area">{{item.shi}}-{{item.qu}}</view>
+        <view class="price">{{item.month_amount}}/{{item.danwei}}</view>
+      </view>
+    </navigator>
+  </view>
+  <!-- tab-bar -->
+  <view class="tab-bar">
+    <view hover-class="none">
+      <image src="../common/images/house_02.png"></image>
+      <text style="color:#FFB73A;">房源</text>
+    </view>
+    <view bindtap="find">
+      <image src="../common/images/find_01.png"></image>
+      <text>发现</text>
+    </view>
+  </view>
+  <view class="mask" style="display:{{mask}}"></view>
+</view>

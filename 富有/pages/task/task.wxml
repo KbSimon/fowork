@@ -6,37 +6,44 @@
       <!-- 积分 -->
       <view class="integral">
         <image src="images/label.png" class="label"></image>
-        <view class="total">80</view>
+        <view class="total">{{integral}}</view>
       </view>
       <!-- 签到 -->
       <view class="check">
-        <view class="one">
-          <image class="yet" src="images/yet.png"></image>
-          <text>1天</text>
+        <view class="one" bindtap="check">
+          <image class="yet" src="{{img}}" data-src="images/get.png"></image>
+          <text class="days" style="color:{{color1}}">+1</text>
+          <text style="color:{{color2}}">1</text>
         </view>
-        <view class="two">
-          <image class="yet" src="images/yet.png"></image>
-          <text>2天</text>
+        <view class="two" bindtap="check">
+          <image class="yet" src="{{img}}" data-src="images/get.png"></image>
+          <text class="days" style="color:{{color1}}">+2</text>
+          <text style="color:{{color2}}">2</text>
         </view>
-        <view class="three">
-          <image class="yet" src="images/yet.png"></image>
-          <text>3天</text>
+        <view class="three" bindtap="check">
+          <image class="yet" src="{{img}}" data-src="images/get.png"></image>
+          <text class="days" style="color:{{color1}}">+3</text>
+          <text style="color:{{color2}}">3</text>
         </view>
-        <view class="four">
-          <image class="yet" src="images/yet.png"></image>
-          <text>4天</text>
+        <view class="four" bindtap="check">
+          <image class="yet" src="{{img}}" data-src="images/get.png"></image>
+          <text class="days" style="color:{{color1}}">+4</text>
+          <text style="color:{{color2}}">4</text>
         </view>
-        <view class="five">
-          <image class="yet" src="images/yet.png"></image>
-          <text>5天</text>
+        <view class="five" bindtap="check">
+          <image class="yet" src="{{img}}" data-src="images/get.png"></image>
+          <text class="days" style="color:{{color1}}">+5</text>
+          <text style="color:{{color2}}">5</text>
         </view>
-        <view class="six">
-          <image class="yet" src="images/get.png"></image>
-          <text>6天</text>
+        <view class="six" bindtap="check"> 
+          <image class="yet" src="{{img}}" data-src="images/get.png"></image>
+          <text class="days" style="color:{{color1}}">+6</text>
+          <text style="color:{{color2}}">6</text>
         </view>
-        <view class="seven">
-          <image class="yet" src="images/get.png"></image>
-          <text>7天</text>
+        <view class="seven" bindtap="check">
+          <image class="yet" src="{{img}}" data-src="images/get.png"></image>
+          <text class="days" style="color:{{color1}}">+7</text>
+          <text style="color:{{color2}}">7</text>
         </view>
       </view>
     </view>
@@ -63,7 +70,7 @@
         </view>
       </view>
       <view class="money-right">
-      <view>立即邀请</view>
+      <button hover-class="none">立即邀请</button>
       </view>
     </view>
      <view>
@@ -78,7 +85,7 @@
         </view>
       </view>
       <view class="money-right">
-      <view>立即分享</view>
+      <button hover-class="none" open-type="share">立即分享</button>
       </view>
     </view>
      <view>
@@ -93,7 +100,7 @@
         </view>
       </view>
       <view class="money-right">
-      <view>去晒收入</view>
+      <button>去晒收入</button>
       </view>
     </view>
   </view>

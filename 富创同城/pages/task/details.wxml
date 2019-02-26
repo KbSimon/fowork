@@ -1,0 +1,9 @@
+<!--pages/details/details.wxml-->
+<view class='main' wx:for="{{total}}" wx:for-item="item" wx:key="{{total}}">
+  <view class="head">
+    <text class="source">{{item.desc}}</text>
+    <text class="add">{{item.change}}</text>
+  </view>
+  <view class="balance">{{item.credit}}</view>
+  <view class="time">{{item.time}}</view>
+</view>

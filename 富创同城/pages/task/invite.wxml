@@ -1,0 +1,19 @@
+<!--pages/invite/invite.wxml-->
+<view class="main">
+  <view class="background">
+    <image src="images/background.png" class="bg"></image>
+    <view class="details">
+      <view class="text">
+        <view>分享邀请成功,</view>
+        <text>积分+1</text>
+      </view>
+      <view class="text">
+        <view>好友下载后，注册成功，</view>
+        <text>积分+3</text>
+      </view>
+      <view class="download">
+      <image src="images/QR.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,91 @@
+<!--pages/house/house.wxml-->
+<view class="main">
+  <view class="header">
+    <view class="header-top">
+      <navigator hover-class="none">写字楼</navigator>
+      <navigator hover-class="none" class="active">租房
+        <view class="border"></view>
+      </navigator>
+    </view>
+    <!-- 筛选条件 -->
+    <view class="header-bottom">
+      <view bindtap="area" style="color:{{color1}}">{{area}}</view>
+      <view style="color:{{color}}">租金</view>
+      <view style="color:{{color}}">默认排序</view>
+      <view style="color:{{color}}">筛选</view>
+    </view>
+    <!-- 筛选 -->
+    <view class="term">
+      <!-- 地区 -->
+      <view class="zone" style="display:{{zone}}">
+        <view class="zone-left">
+          <view wx:for="{{district}}" wx:key="key">
+            <view class="{{index==idx?'active':'left'}}" bindtap='zone' data-index="{{index}}">{{item.num}}</view>
+          </view>
+        </view>
+        <view class="zone-right">
+          <view wx:for="{{row.address}}">
+          <view>{{row}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="item">
+    <view class="list">
+      <view class="list-left">
+        <image src="{{src}}" class="thumb"></image>
+      </view>
+      <view class="list-right">
+        <view class="title">整租 万恒创业园仁爱路 五常大道 梁强大厦 1室1厅 江景家园</view>
+        <view class="type">写字楼</view>
+        <view class="area">杭州市-江干区</view>
+        <view class="price">1.6/㎡/天</view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list-left">
+        <image src="{{src}}" class="thumb"></image>
+      </view>
+      <view class="list-right">
+        <view class="title">整租 万恒创业园仁爱路 五常大道 梁强大厦 1室1厅 江景家园</view>
+        <view class="type">写字楼</view>
+        <view class="area">杭州市-江干区</view>
+        <view class="price">1.6/㎡/天</view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list-left">
+        <image src="{{src}}" class="thumb"></image>
+      </view>
+      <view class="list-right">
+        <view class="title">整租 万恒创业园仁爱路 五常大道 梁强大厦 1室1厅 江景家园</view>
+        <view class="type">写字楼</view>
+        <view class="area">杭州市-江干区</view>
+        <view class="price">1.6/㎡/天</view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list-left">
+        <image src="{{src}}" class="thumb"></image>
+      </view>
+      <view class="list-right">
+        <view class="title">整租 万恒创业园仁爱路 五常大道 梁强大厦 1室1厅 江景家园</view>
+        <view class="type">写字楼</view>
+        <view class="area">杭州市-江干区</view>
+        <view class="price">1.6/㎡/天</view>
+      </view>
+    </view>
+  </view>
+  <view class="tab-bar">
+    <navigator hover-class="none">
+      <image src="../common/images/house_02.png"></image>
+      <text>房源</text>
+    </navigator>
+    <navigator hover-class="none" url="../task/task">
+      <image src="../common/images/find_01.png"></image>
+      <text>任务</text>
+    </navigator>
+  </view>
+  <view class="mask" style="display:{{mask}}"></view>
+</view>

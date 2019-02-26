@@ -1,0 +1,34 @@
+<!--pages/firm/news.wxml-->
+<view class="main">
+  <view class="navbar">
+    <view bindtap="firm">开发商</view>
+    <view style="color:#F9AB00;font-size:36rpx;">动态资讯</view>
+  </view>
+  <!-- 新闻列表 -->
+  <view class="news">
+    <view class="title">最新动态</view>
+    <navigator hover-class="none" class="list" wx:for="{{data}}" wx:item="item" wx:key="data" url="../essay/essay?id={{item.article_id}}">
+      <view class="list-left">
+        <image src="{{item.cover_img}}"></image>
+      </view>
+      <view class="list-right">
+        <view class="headline">{{item.title}}</view>
+        <view class="msg">
+          <view class="type" wx:if="{{item.cate_id=='2'}}">资讯</view>
+          <view class="time">{{item.add_time}}</view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <!-- bar -->
+  <view class="bar">
+    <view bindtap="house">
+      <image src="../common/images/house_01.png"></image>
+      <text>房源</text>
+    </view>
+    <view>
+      <image src="../common/images/find_02.png"></image>
+      <text style="color:#FFB73A;">发现</text>
+    </view>
+  </view>
+</view>

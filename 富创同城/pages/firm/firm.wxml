@@ -1,0 +1,31 @@
+<!--pages/firm/firm.wxml-->
+<view class="main">
+  <!-- navbar -->
+  <view class="navbar">
+    <view style="color:#F9AB00;font-size:36rpx;" url="">开发商</view>
+    <view bindtap="msg" url="../firm/news">动态资讯</view>
+  </view>
+  <!-- banner -->
+  <navigator class="banner" hover-class="none" wx:if="{{url.length !==0}}" url="../firm/banner">
+    <image src="{{banner}}"></image>
+  </navigator>
+  <view class="banner" wx:if="{{url.length ==0}}">
+    <image src="{{banner}}"></image>
+  </view>
+  <!-- 企业列表 -->
+  <view class="list" >
+    <navigator hover-class="none" wx:for="{{list}}" wx:item="item" wx:key="list" url="../firm/company?id={{item.id}}">
+      <image src="{{item.adv_imgs[0]}}"></image>
+    </navigator>
+  </view>
+  <view class="bar">
+    <view bindtap="house">
+      <image src="../common/images/house_01.png"></image>
+      <text>房源</text>
+    </view>
+    <view>
+      <image src="../common/images/find_02.png"></image>
+      <text style="color:#FFB73A;">发现</text>
+    </view>
+  </view>
+</view>

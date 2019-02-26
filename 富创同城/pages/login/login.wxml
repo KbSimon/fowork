@@ -1,0 +1,26 @@
+<!--pages/login/login.wxml-->
+<view class="content">
+  <view class="logo">
+    <image src="images/logo.png"></image>
+  </view>
+  <view class="form">
+    <!-- 账户 -->
+    <view class="name">
+      <image src="images/phone.png" class="ico"></image>
+      <input type="number" name="userName" class="name-input" placeholder="请输入手机号" placeholder-style="color:#9A9A9A" maxlength="11" bindblur="nameInput" value="{{value}}"></input>
+      <view class="shut" bindtap="clear">
+        <view class="x">x</view></view>
+    </view>
+    <!-- 密码 -->
+    <view class="password">
+      <image src="images/password.png" class="ico"></image>
+      <input type="{{mold}}" name="password" class="password-input" placeholder="请输入密码" placeholder-style="color:#9A9A9A" maxlength="16" bindblur="passwordInput"></input>
+      <image src="{{see}}" class="see" bindtap="change"></image>
+    </view>
+    <button class="login-btn" hover-class="none" bindtap="loginBtn">登录</button>
+    <navigator class="register-btn" hover-class="none" url="../register/register">注册</navigator>
+  </view>
+  <view class="forget">
+  <navigator class="forget-btn" hover-class="none" url="../forget/forget">忘记密码？</navigator>
+  </view>
+</view>

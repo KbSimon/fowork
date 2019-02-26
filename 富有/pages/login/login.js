@@ -1,13 +1,15 @@
 // pages/login/login.js
+const app = getApp()
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
     Tip: "",
     userName: "",
-    password: ""
+    password: "",
+    user_id:"",
+    token:""
   },
 
   bindViewTap: function() {
@@ -53,10 +55,10 @@ Page({
   passwordInput: function(e) {
     let password = e.detail.value;
     if (password.length < 6 || password.length > 16) {
-      // wx.showModal({
-      //   title: '提示',
-      //   content: '请输入6-16位密码',
-      // })
+      wx.showModal({
+        title: '提示',
+        content: '请输入6-16位密码',
+      })
     } else {
       this.setData({
         password: e.detail.value
@@ -65,37 +67,47 @@ Page({
   },
 
   loginBtn: function(a) {
-   let that =this;
-    if (that.data.userName.length == 0){
+    let that = this;
+    if (that.data.userName.length == 0) {
       wx.showModal({
         title: '提示',
         content: '请输入11位手机号码',
       })
-    }else if(that.data.password.length == 0){
-       wx.showModal({
+    } else if (that.data.password.length == 0) {
+      wx.showModal({
         title: '提示',
         content: '请输入6-16位密码',
       })
     }
-     wx.request({
-       url: 'https://www.fuminjf.com/v1/login/login',
-       data:{
-         user_name:that.data.userName,
-         pass: that.data.password
-       },
-       success:res=>{
-         let status = res.data.status;
-         if(status ==1){
-           wx.navigateTo({
-             url: '../task/task',
-           })
-         }else{
-           this.setData({
-             info:res.data.info
-           })
-         }
-       }
-     })
+    wx.request({
+      url: app.globalData.API + '/v1/login/login',
+      data: {
+        user_name: that.data.userName,
+        pass: that.data.password
+      },
+      success: res => {
+        let status = res.data.status;
+        if (status == 1) {
+          wx.navigateTo({
+            url: '../task/task',
+          })
+          let id = res.data.data.user_id;
+          let token = res.data.data.token;
+          wx.setStorage({
+            key: "key",
+            data: {
+               user_id:id,
+               token:token
+            }
+          })
+        } else {
+          wx.showModal({
+            title: '提示',
+            content: res.data.info,
+          })
+        }
+      }
+    })
   },
 
   /**

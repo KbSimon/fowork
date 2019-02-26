@@ -1,0 +1,128 @@
+<!--pages/task/task.wxml-->
+<view class="content">
+  <view class="banner">
+    <image src="images/bg.png"></image>
+    <view class="top">
+      <!-- 积分 -->
+      <view class="integral">
+        <image src="images/label.png" class="label"></image>
+        <view class="total">{{integral}}
+          <navigator hover-class="none" url="../task/details">明细</navigator>
+        </view>
+      </view>
+      <!-- 签到 -->
+      <view class="check">
+        <view class="one" bindtap="check">
+          <image class="yet" src="{{img}}" data-src="images/get.png"></image>
+          <text class="days" style="color:{{color1}}">+1</text>
+          <text style="color:{{color2}}">1</text>
+        </view>
+        <view class="two" bindtap="check2">
+          <image class="yet" src="{{img2}}" data-src="images/get.png"></image>
+          <text class="days" style="color:{{color1}}">+2</text>
+          <text style="color:{{color2}}">2</text>
+        </view>
+        <view class="three" bindtap="check3">
+          <image class="yet" src="{{img3}}" data-src="images/get.png"></image>
+          <text class="days" style="color:{{color1}}">+3</text>
+          <text style="color:{{color2}}">3</text>
+        </view>
+        <view class="four" bindtap="check4">
+          <image class="yet" src="{{img4}}" data-src="images/get.png"></image>
+          <text class="days" style="color:{{color1}}">+4</text>
+          <text style="color:{{color2}}">4</text>
+        </view>
+        <view class="five" bindtap="check5">
+          <image class="yet" src="{{img5}}" data-src="images/get.png"></image>
+          <text class="days" style="color:{{color1}}">+5</text>
+          <text style="color:{{color2}}">5</text>
+        </view>
+        <view class="six" bindtap="check6">
+          <image class="yet" src="{{img6}}" data-src="images/get.png"></image>
+          <text class="days" style="color:{{color1}}">+6</text>
+          <text style="color:{{color2}}">6</text>
+        </view>
+        <view class="seven" bindtap="check7">
+          <image class="yet" src="{{img7}}" data-src="images/get.png"></image>
+          <text class="days" style="color:{{color1}}">+7</text>
+          <text style="color:{{color2}}">7</text>
+        </view>
+      </view>
+    </view>
+    <navigator url='../task/rules' hover-class="none" class="rules">积分规则</navigator>
+  </view>
+  <view class="teach">
+    <view class="line"></view>
+    <view class="earn">
+      <image src="images/icon.png" class="icon"></image>
+      <text>教你赚零钱</text>
+    </view>
+    <view class="line"></view>
+  </view>
+  <view class="money">
+    <!-- 邀请好友 -->
+    <view>
+      <view class="money-left clearfloat">
+        <view class="ico">
+          <image src="{{list[0].img}}"></image>
+        </view>
+        <view class="task">
+          <text>{{list[0].title}}</text>
+          <image src="images/ico.png" class="int"></image>
+          <text style="color:#FF4B66;">+{{list[0].credit}}</text>
+        </view>
+      </view>
+      <view class="money-right">
+        <button hover-class="none" bindtap="invite">立即邀请</button>
+      </view>
+    </view>
+    <!-- 分享 -->
+    <view>
+      <view class="money-left clearfloat">
+        <view class="ico">
+          <image src="{{list[1].img}}"></image>
+        </view>
+        <view class="task">
+          <text>{{list[1].title}}</text>
+          <image src="images/ico.png" class="int"></image>
+          <text style="color:#FF4B66;">+{{list[1].credit}}</text>
+        </view>
+      </view>
+      <view class="money-right">
+        <button hover-class="none" open-type="share" bindtap="share" disabled="{{boolean}}">立即分享</button>
+      </view>
+    </view>
+    <!-- 查看企业 -->
+    <view>
+      <view class="money-left clearfloat">
+        <view class="ico">
+          <image src="{{list[2].img}}"></image>
+        </view>
+        <view class="task">
+          <text>{{list[2].title}}</text>
+          <image src="images/ico.png" class="int"></image>
+          <text style="color:#FF4B66;">+{{list[2].credit}}</text>
+        </view>
+      </view>
+      <view class="money-right">
+        <button hover-class="none" bindtap="look">立即查看</button>
+      </view>
+    </view>
+    <!-- 晒收入 -->
+    <view>
+      <view class="money-left clearfloat">
+        <view class="ico">
+          <image src="{{list[3].img}}"></image>
+        </view>
+        <view class="task">
+          <text>{{list[3].title}}</text>
+          <image src="images/ico.png" class="int"></image>
+          <text style="color:#FF4B66;">+{{list[3].credit}}</text>
+        </view>
+      </view>
+      <view class="money-right">
+        <button hover-class="none" bindtap="bask">去晒收入</button>
+      </view>
+    </view>
+  </view>
+</view>

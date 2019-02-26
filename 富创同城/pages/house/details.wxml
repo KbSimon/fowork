@@ -1,0 +1,45 @@
+<!--pages/house/details.wxml-->
+<import src="../wxParse/wxParse.wxml" />
+<view class="content">
+  <!-- banner -->
+  <view class="banner">
+    <image src="{{src}}"></image>
+  </view>
+  <!-- 信息 -->
+  <view class="msg">
+    <!-- 顶部 -->
+    <view class="msg-top">
+      <!-- 标题 -->
+      <view class="title">{{title}}</view>
+      <!-- 租金 -->
+      <view class="rent">
+        <view class="money">
+          <text>{{month}}</text>
+          <text>{{danwei}}</text>
+        </view>
+        <view class="time">{{add_time}}发布</view>
+      </view>
+    </view>
+    <view class="msg-bottom">
+      <text>面积：{{area}}㎡</text>
+      <text>装修：{{zhuangxiu}}</text>
+      <text>楼层：{{louceng}}/{{zonglouceng}}层</text>
+      <text wx:if="{{dianti==1}}">电梯：有电梯</text>
+      <text wx:if="{{dianti !=1}}">电梯：无电梯</text>
+      <view>地址：{{shi}}{{qu}}{{addr}}</view>
+    </view>
+  </view>
+  <!-- 详情 -->
+  <view class="details">
+    <view>房源概况</view>
+    <view class="text">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+
+  </view>
+  <view class="tab-bar">
+  <navigator url="../house/order?id={{id}}"  hover-class="none" class="order">预约看房</navigator>
+  <view class="phone" bindtap="phone">拨打电话</view>
+  </view>
+
+</view>

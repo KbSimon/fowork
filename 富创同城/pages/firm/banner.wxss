@@ -1,0 +1,4 @@
+/* pages/jump/banner.wxss */
+web-view{
+  width: 750rpx !important;
+}

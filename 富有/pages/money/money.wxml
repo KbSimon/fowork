@@ -1,0 +1,16 @@
+<!--pages/money/money.wxml-->
+<view class="main">
+  <view class="bg">
+    <image src="images/bg-03.png"></image>
+  </view>
+  <view class="detail">
+    <view class="title">
+      <view>我在这里挣了</view>
+      <text>90</text>
+    </view>
+    <view class="QR">
+      <image src="images/qr-02.png"></image>
+    </view>
+    <button hover-class="none" class="down">长按二维码 一起赚钱</button>
+  </view>
+</view>

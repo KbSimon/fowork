@@ -1,0 +1,81 @@
+/* pages/firm/firm.wxss */
+
+/* navbar */
+
+.navbar {
+  top: 0;
+  width: 100%;
+  height: 100rpx;
+  overflow: hidden;
+  text-align: center;
+  font-size: 32rpx;
+  position: fixed;
+  background: #fff;
+}
+
+.navbar>view {
+  width: 50%;
+  float: left;
+  line-height: 80rpx;
+}
+
+.banner {
+  width: 750rpx;
+  height: 250rpx;
+  margin-top: 100rpx;
+}
+
+.banner>image {
+  width: 750rpx;
+  height: 250rpx;
+}
+
+.list {
+  margin-bottom: 50rpx;
+}
+
+.list navigator{
+  width: 690rpx;
+  height: 400rpx;
+  margin: 30rpx auto;
+}
+
+.list navigator:last-child{
+  margin-bottom: 130rpx;
+}
+
+.list image {
+  display: block;
+  width: 690rpx;
+  height: 400rpx;
+  
+}
+
+/* bar */
+
+.bar {
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  position: fixed;
+  margin-top: 200rpx;
+  overflow: hidden;
+  background: rgba(250,250,250,1);
+}
+
+.bar>view {
+  width: 50%;
+  float: left;
+  display: flex;
+  font-size: 20rpx;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bar>view>image {
+  width: 56rpx;
+  height: 56rpx;
+}
